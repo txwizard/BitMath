@@ -1,0 +1,779 @@
+            Development Notes for Class Library BitMath, Version 4.3
+
+================================================================================
+2016-05-04 13:13:32
+================================================================================
+
+FormatIntegerAsBitArray	FormatIntegerAsHex
+
+FormatBitMask
+
+Rename 'InfoForType' to 'InfoForIntegralType'
+
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BitHelpers.cs(737,36): updated definition
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs(1222,48): updated reference
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BitHelpers.cs(597,37): updated reference
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BitMaskFormat.cs(116,21): updated reference
+Looking for symbol references in project 'C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll'
+
+Rename 'InfoForType' to 'InfoForIntegralType'
+
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BitHelpers.cs(737,36): updated definition
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs(1222,48): updated reference
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BitHelpers.cs(597,37): updated reference
+Looking for symbol references in project 'C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll'
+
+        Bit Order = HighBitToLowBit (integer value = 1):
+
+An System.FormatException exception occurred:
+
+    Message:        Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+    Method:         System.Text.StringBuilder AppendFormat(System.IFormatProvider, System.String, System.Object[])
+    Stack Trace:    at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+                    at System.String.Format(IFormatProvider provider, String format, Object[] args)
+                    at System.String.Format(String format, Object[] args)
+                    at WizardWrx.BCLIntegerTypeInfo.ToString() in c:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BCLIntegerTypeInfo.cs:line 318
+                    at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+                    at System.String.Format(IFormatProvider provider, String format, Object[] args)
+                    at System.IO.TextWriter.WriteLine(String format, Object[] arg)
+                    at System.IO.TextWriter.SyncTextWriter.WriteLine(String format, Object[] arg)
+                    at System.Console.WriteLine(String format, Object[] arg)
+                    at TestStand.BitArray32TestStand.TestBitArrayRulers(Int32& pintTestNbr) in c:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\BitArray32TestStand.cs:line 1084
+
+
+
+================================================================================
+2016-05-04 15:48:08
+================================================================================
+
+intSampleIndex = 0x00000002
+
+[0x00000002] = 0x0065
+
+>Debug.PRINT s_aobjRulerSample [ intSampleIndex ].GetType ( )
+	{Name = "UInt16" FullName = "System.UInt16"}
+    [System.RuntimeType]: {System.UInt16}
+    base: {System.UInt16}
+    Assembly: {mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089}
+    AssemblyQualifiedName: "System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    Attributes: Public | SequentialLayout | Sealed | Serializable | BeforeFieldInit
+    BaseType: {System.ValueType}
+    ContainsGenericParameters: false
+    DeclaringMethod: 's_aobjRulerSample [ intSampleIndex ].GetType ( ).DeclaringMethod' threw an exception of type 'System.InvalidOperationException'
+    DeclaringType: null
+    FullName: "System.UInt16"
+    GenericParameterAttributes: 's_aobjRulerSample [ intSampleIndex ].GetType ( ).GenericParameterAttributes' threw an exception of type 'System.InvalidOperationException'
+    GenericParameterPosition: 's_aobjRulerSample [ intSampleIndex ].GetType ( ).GenericParameterPosition' threw an exception of type 'System.InvalidOperationException'
+    GUID: {0f0928b7-11dd-31dd-a0d5-bb008ae887bf}
+    HasElementType: false
+    HasProxyAttribute: false
+    IsAbstract: false
+    IsAnsiClass: true
+    IsArray: false
+    IsAutoClass: false
+    IsAutoLayout: false
+    IsByRef: false
+    IsClass: false
+    IsCOMObject: false
+    IsContextful: false
+    IsEnum: false
+    IsExplicitLayout: false
+    IsGenericParameter: false
+    IsGenericType: false
+    IsGenericTypeDefinition: false
+    IsImport: false
+    IsInterface: false
+    IsLayoutSequential: true
+    IsMarshalByRef: false
+    IsNested: false
+    IsNestedAssembly: false
+    IsNestedFamANDAssem: false
+    IsNestedFamily: false
+    IsNestedFamORAssem: false
+    IsNestedPrivate: false
+    IsNestedPublic: false
+    IsNotPublic: false
+    IsPointer: false
+    IsPrimitive: true
+    IsPublic: true
+    IsSealed: true
+    IsSerializable: true
+    IsSpecialName: false
+    IsSzArray: false
+    IsUnicodeClass: false
+    IsValueType: true
+    IsVisible: true
+    MemberType: TypeInfo
+    Module: {CommonLanguageRuntimeLibrary}
+    Namespace: "System"
+    ReflectedType: null
+    StructLayoutAttribute: {System.Runtime.InteropServices.StructLayoutAttribute}
+    TypeHandle: {System.RuntimeTypeHandle}
+    TypeInitializer: null
+    UnderlyingSystemType: {System.UInt16}
+>
+
+
+================================================================================
+2016-05-04 15:53:59 - I found the error, which was in the revised test stand
+                      format control string. I put the word "decimal" inside the
+                      format item!
+
+                      Since I changed the compilation order, the build engine
+                      took that as a hint to build the whole assembly.
+================================================================================
+
+------ Build started: Project: TestStand, Configuration: Release x86 ------
+Build started 2016-05-04 15:57:14.
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 2016-05-04 15:57:14 (2016-05-04 20:57:14 UTC)
+          Build Number = 203
+  Sleeping for 3 seconds
+  Waking from cat nap
+
+CoreResGen:
+  "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\Resgen.exe" /useSourcePath
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                                       /r:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+                                                                       /r:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\_Deprecated_Libraries\SharedUtl2\SharedUtl2\bin\Release\WizardWrx.SharedUtl2.dll"
+
+                                                                       /compile Properties\Resources.resx,
+                                                                                obj\x86\Release\TestStand.Properties.Resources.resources
+
+  Processing resource file "Properties\Resources.resx"
+                      into "obj\x86\Release\TestStand.Properties.Resources.resources".
+
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe /noconfig
+                                                  /nowarn:1701,
+                                                          1702,
+                                                          2008
+                                                  /nostdlib+
+                                                  /platform:x86
+                                                  /errorreport:prompt
+                                                  /warn:4
+                                                  /define:TRACE
+                                                  /errorendlocation
+                                                  /preferreduilang:en-US
+                                                  /highentropyva-
+
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                  /reference:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+                                                  /reference:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\_Deprecated_Libraries\SharedUtl2\SharedUtl2\bin\Release\WizardWrx.SharedUtl2.dll"
+
+                                                  /debug:pdbonly
+                                                  /filealign:512
+                                                  /optimize+
+                                                  /out:obj\x86\Release\BithMathTestStand.exe
+
+                                                  /resource:obj\x86\Release\TestStand.Properties.Resources.resources
+
+                                                  /target:exe
+                                                  /utf8output
+                                                  /win32icon:WW_Icon1.ico
+
+                                                  Program.cs
+                                                  BitArray32TestStand.cs
+                                                  Util.cs
+
+                                                  Properties\Resources.Designer.cs
+                                                  Properties\AssemblyInfo.cs
+
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\BithMathTestStand.exe"
+                 to "bin\Release\BithMathTestStand.exe".
+  TestStand      -> C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe
+  Copying file from "obj\x86\Release\BithMathTestStand.pdb"
+                 to "bin\Release\BithMathTestStand.pdb".
+
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\ " "-tC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe
+          Version    = 4.0.203.26918
+          File Date  = 2016-05-04 15:57:17 (2016-05-04 20:57:17 UTC)
+  Log File FQFN      = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\BuildHistory.LOG
+          File Date  = 2016-05-04 15:57:17 (2016-05-04 20:57:17 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:03.62
+========== Build: 1 succeeded, 0 failed, 1 up-to-date, 0 skipped ==========
+
+		pintTestNbr			0x00000002		int
+		enmBitDisplayOrder	HighBitToLowBit	WizardWrx.BitArray32.BitDisplayOrder
+		enmBitCount			Count08			WizardWrx.BitArray32.BitCount
+		intSampleIndex		0x00000001		int
+
+-		[System.FormatException]	{System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(String format, Object[] args)
+   at WizardWrx.BCLIntegerTypeInfo.ToString() in c:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BCLIntegerTypeInfo.cs:line 318
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(IFormatProvider provider, String format, Object[] args)
+   at System.IO.TextWriter.WriteLine(String format, Object[] arg)
+   at System.IO.TextWriter.SyncTextWriter.WriteLine(String format, Object[] arg)
+   at System.Console.WriteLine(String format, Object[] arg)
+   at TestStand.BitArray32TestStand.TestBitArrayRulers(Int32& pintTestNbr) in c:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\BitArray32TestStand.cs:line 1084}	System.FormatException
+
+
+
+================================================================================
+2016-05-04 16:29:05 - It really IS in the library!
+================================================================================
+
+BCLI_TOSTRING_TEMPLATE
+
+BCLType = {0}, MaximumDecimalDigits = {1}, RequiredStorageBytes = {2}, CapacityInBits = {3}, IsSigned = {4}, GUIDPerType = {5}
+
+
+------ Build started: Project: BitMath, Configuration: Debug Any CPU ------
+Build started 2016-05-04 16:34:22.
+
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 2016-05-04 16:34:22 (2016-05-04 21:34:22 UTC)
+          Build Number = 124
+  Sleeping for 3 seconds
+  Waking from cat nap
+
+CoreResGen:
+  "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\Resgen.exe" /useSourcePath
+
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                                       /compile Properties\Resources.resx,
+                                                                                obj\Debug\WizardWrx.Properties.Resources.resources
+  Processing resource file "Properties\Resources.resx"
+                      into "obj\Debug\WizardWrx.Properties.Resources.resources".
+
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe /noconfig
+                                                  /nowarn:1701,
+                                                          1702,
+                                                          2008
+                                                  /nostdlib+
+                                                  /errorreport:prompt
+                                                  /warn:4
+                                                  /doc:bin\Debug\WizardWrx.BitMath.XML
+                                                  /define:TRACE;
+                                                          DEBUG
+                                                  /errorendlocation
+                                                  /preferreduilang:en-US
+                                                  /highentropyva-
+
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                  /debug+
+                                                  /debug:full
+                                                  /filealign:512
+                                                  /optimize-
+                                                  /out:obj\Debug\WizardWrx.BitMath.dll
+
+                                                  /resource:obj\Debug\WizardWrx.Properties.Resources.resources
+
+                                                  /target:library
+                                                  /utf8output
+
+                                                  BCLIntegerTypeInfo.cs
+                                                  BitArray32.cs
+                                                  BitHelpers.cs
+                                                  BitMaskAndRuler.cs
+                                                  BitMaskFormat.cs
+                                                  FormattingParameters.cs
+
+                                                  Properties\AssemblyInfo.cs
+                                                  Properties\Resources.Designer.cs
+
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Debug\WizardWrx.BitMath.dll"
+                 to "bin\Debug\WizardWrx.BitMath.dll".
+  BitMath        -> C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll
+  Copying file from "obj\Debug\WizardWrx.BitMath.pdb"
+                 to "bin\Debug\WizardWrx.BitMath.pdb".
+
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\ " "-tC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll
+          Version    = 4.3.124.28032
+          File Date  = 2016-05-04 16:34:25 (2016-05-04 21:34:25 UTC)
+  Log File FQFN      = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BuildHistory.LOG
+          File Date  = 2016-05-04 16:34:26 (2016-05-04 21:34:26 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:04.05
+
+
+------ Build started: Project: TestStand, Configuration: Debug x86 ------
+Build started 2016-05-04 16:34:26.
+
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 2016-05-04 16:34:26 (2016-05-04 21:34:26 UTC)
+          Build Number = 204
+  Sleeping for 3 seconds
+  Waking from cat nap
+
+CoreResGen:
+  "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\Resgen.exe" /useSourcePath
+
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                                       /r:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll"
+                                                                       /r:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\_Deprecated_Libraries\SharedUtl2\SharedUtl2\bin\Release\WizardWrx.SharedUtl2.dll"
+
+                                                                       /compile Properties\Resources.resx,
+                                                                                obj\x86\Debug\TestStand.Properties.Resources.resources
+
+  Processing resource file "Properties\Resources.resx"
+                      into "obj\x86\Debug\TestStand.Properties.Resources.resources".
+
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe /noconfig
+                                                  /nowarn:1701,
+                                                          1702,
+                                                          2008
+                                                  /nostdlib+
+                                                  /platform:x86
+                                                  /errorreport:prompt
+                                                  /warn:4
+                                                  /define:TRACE;
+                                                          DEBUG
+                                                  /errorendlocation
+                                                  /preferreduilang:en-US
+                                                  /highentropyva-
+
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                  /reference:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll"
+                                                  /reference:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\_Deprecated_Libraries\SharedUtl2\SharedUtl2\bin\Release\WizardWrx.SharedUtl2.dll"
+
+                                                  /debug+
+                                                  /debug:full
+                                                  /filealign:512
+                                                  /optimize-
+                                                  /out:obj\x86\Debug\BithMathTestStand.exe
+
+                                                  /resource:obj\x86\Debug\TestStand.Properties.Resources.resources
+
+                                                  /target:exe
+                                                  /utf8output
+                                                  /win32icon:WW_Icon1.ico
+
+                                                  Program.cs
+                                                  BitArray32TestStand.cs
+                                                  Util.cs
+
+                                                  Properties\Resources.Designer.cs
+                                                  Properties\AssemblyInfo.cs
+
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll"
+                 to "bin\Debug\WizardWrx.BitMath.dll".
+  Copying file from "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.pdb"
+                 to "bin\Debug\WizardWrx.BitMath.pdb".
+  Copying file from "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.xml"
+                 to "bin\Debug\WizardWrx.BitMath.xml".
+
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Debug\BithMathTestStand.exe"
+                 to "bin\Debug\BithMathTestStand.exe".
+  TestStand      -> C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\BithMathTestStand.exe
+  Copying file from "obj\x86\Debug\BithMathTestStand.pdb"
+                 to "bin\Debug\BithMathTestStand.pdb".
+
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\ " "-tC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\BithMathTestStand.exe"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\BithMathTestStand.exe
+          Version    = 4.0.204.28034
+          File Date  = 2016-05-04 16:34:29 (2016-05-04 21:34:29 UTC)
+  Log File FQFN      = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\BuildHistory.LOG
+          File Date  = 2016-05-04 16:34:30 (2016-05-04 21:34:30 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:03.72
+========== Build: 2 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+-		this								{BCLType = System.Byte, MaximumDecimalDigits = 3, RequiredStorageBytes = 1, CapacityInBits = 8, IsSigned = False, GUIDPerType = 9b957340-adba-3234-91ea-46a5c9bff530}	WizardWrx.BCLIntegerTypeInfo
+				_fIsSigned					false																																									bool
+				_intBitsCapacity			0x00000008																																								int
+				_intBytesOccupied			0x00000001																																								int
+				_intMaximumDecimalDigits	0x00000003																																								int
+		+		_typBCLType					{System.Byte}																																							System.Type {System.RuntimeType}
+		+		BCLType						{System.Byte}																																							System.Type {System.RuntimeType}
+				CapacityInBits				0x00000008																																								int
+		+		GUIDPerType					{9b957340-adba-3234-91ea-46a5c9bff530}																																	System.Guid
+				IsSigned					false																																									bool
+				MaximumDecimalDigits		0x00000003																																								int
+				RequiredStorageBytes		0x00000001																																								int
+
+
+        Bit Order = HighBitToLowBit (integer value = 1):
+
+
+        76543210
+        00000111 (BCLType = System.Byte, MaximumDecimalDigits = 3, RequiredStorageBytes = 1, CapacityInBits = 8, IsSigned = False, GUIDPerType = 9b957340-adba-3 234-91ea-46a5c9bff530 value as integer: hexadecimal = 07 = 7  decimal)
+
+
+        Bit Order = LowBitToHighBit (integer value = 2):
+
+
+        01234567
+        11100000 (BCLType = System.Byte, MaximumDecimalDigits = 3, RequiredStorageBytes = 1, CapacityInBits = 8, IsSigned = False, GUIDPerType = 9b957340-adba-3234-91ea-46a5c9bff530 value as integer: hexadecimal = 07 = 7  decimal)
+
+'BithMathTestStand.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\Windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll'. Symbols loaded.
+'BithMathTestStand.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\BithMathTestStand.exe'. Symbols loaded.
+'BithMathTestStand.exe' (CLR v2.0.50727: BithMathTestStand.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll'. Symbols loaded.
+'BithMathTestStand.exe' (CLR v2.0.50727: BithMathTestStand.exe): Loaded 'C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\WizardWrx.BitMath.dll'. Symbols loaded.
+A first chance exception of type 'System.ComponentModel.InvalidEnumArgumentException' occurred in WizardWrx.BitMath.dll
+A first chance exception of type 'System.ComponentModel.InvalidEnumArgumentException' occurred in WizardWrx.BitMath.dll
+A first chance exception of type 'System.ComponentModel.InvalidEnumArgumentException' occurred in WizardWrx.BitMath.dll
+A first chance exception of type 'System.ComponentModel.InvalidEnumArgumentException' occurred in WizardWrx.BitMath.dll
+'BithMathTestStand.exe' (CLR v2.0.50727: BithMathTestStand.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll'.
+'BithMathTestStand.exe' (CLR v2.0.50727: BithMathTestStand.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Symbols loaded.
+'BithMathTestStand.exe' (CLR v2.0.50727: BithMathTestStand.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll'. Symbols loaded.
+The program '[0x6B4] BithMathTestStand.exe' has exited with code -1 (0xffffffff).
+
+
+================================================================================
+2016-05-04 16:45:29 - Abort the interactive debugging session, and run the full
+                      test script.
+================================================================================
+
+BOJ "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\scripts\BitMathExercises_DEBUG.CMD", version 2016-05-01 19:49
+
+
+----------------------------------------------
+Current date and time = 2016-05-04 16:45:29.08
+----------------------------------------------
+
+
+Date2FN, version 1.3.72.500
+Begin @ 2016-05-04 16:45:29.385 (2016-05-04 21:45:29.385 UTC)
+
+Original File Name       = ..\NOTES\BithMathTestStand_DEBUG.LOG
+Time Stamp Mask          = YYYYMMDD_hhmmss
+Flag File As Read Only   = True
+Directory Recursion Flag = False
+UQ Filespec Flag         = False
+New File Name            = ..\NOTES\BithMathTestStand_DEBUG_20160504_164529.LOG
+
+Date2FN End
+2016-05-04 16:45:29.483 (2016-05-04 21:45:29.483 UTC)
+Elapsed time: 0:00:00:00.100
+SmartRen version 1, 0, 0, 2
+Wed 04 May 2016 21:45:29 UTC
+Wed 04 May 2016 16:45:29 Local
+
+Input File  = BitArray32TestStand.CSV
+Output File = ..\NOTES\BitArray32TestStand_DEBUG.CSV
+Mutex Name  = SmartRen_BitArray32TestStand_CSV_B4414586_D8CA_4136_A088_CC4F03258232
+Mutex Wait  = 1 second
+
+Acquiring mutex.
+Mutex acquired.
+File BitArray32TestStand.CSV renamed ..\NOTES\BitArray32TestStand_DEBUG.CSV
+Mutex released.
+
+SmartRen EOJ
+<*>
+Date2FN, version 1.3.72.500
+Begin @ 2016-05-04 16:45:29.653 (2016-05-04 21:45:29.653 UTC)
+
+Original File Name       = ..\NOTES\BitArray32TestStand_DEBUG.CSV
+Time Stamp Mask          = YYYYMMDD_hhmmss
+Flag File As Read Only   = True
+Directory Recursion Flag = False
+UQ Filespec Flag         = False
+New File Name            = ..\NOTES\BitArray32TestStand_DEBUG_20160504_164529.CSV
+
+Date2FN End
+2016-05-04 16:45:29.768 (2016-05-04 21:45:29.768 UTC)
+Elapsed time: 0:00:00:00.117
+
+EOJ BitMathExercises_DEBUG.CMD
+
+WWPause version 3, 0, 0, 4
+Wed 04 May 2016 16:45:29 Local
+
+Please press RETURN when ready...
+
+
+
+================================================================================
+2016-05-04 16:52:35 - Make a new retail build and test it. The only post-build
+                      the library is addtion of a missing comment on the c;psomg
+                      bracket of the ToString override in BCLIntegerTypeInfo.
+
+                      That being the case, and given that the library passed all
+                      tests with flying colors, the next build will be Retail.
+================================================================================
+
+------ Build started: Project: BitMath, Configuration: Release Any CPU ------
+Build started 2016-05-04 17:14:53.
+
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 2016-05-04 17:14:53 (2016-05-04 22:14:53 UTC)
+          Build Number = 125
+  Sleeping for 3 seconds
+  Waking from cat nap
+
+CoreResGen:
+  "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\Resgen.exe" /useSourcePath
+
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                                       /compile Properties\Resources.resx,
+                                                                                obj\Release\WizardWrx.Properties.Resources.resources
+
+  Processing resource file "Properties\Resources.resx"
+                      into "obj\Release\WizardWrx.Properties.Resources.resources".
+
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe /noconfig
+                                                  /nowarn:1701,
+                                                          1702,
+                                                          2008
+                                                  /nostdlib+
+                                                  /errorreport:prompt
+                                                  /warn:4
+                                                  /doc:bin\Release\WizardWrx.BitMath.XML
+                                                  /define:TRACE
+                                                  /errorendlocation
+                                                  /preferreduilang:en-US
+                                                  /highentropyva-
+
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                  /debug:pdbonly
+                                                  /filealign:512
+                                                  /optimize+
+                                                  /out:obj\Release\WizardWrx.BitMath.dll
+
+                                                  /resource:obj\Release\WizardWrx.Properties.Resources.resources
+
+                                                  /target:library
+                                                  /utf8output
+
+                                                  BCLIntegerTypeInfo.cs
+                                                  BitArray32.cs
+                                                  BitHelpers.cs
+                                                  BitMaskAndRuler.cs
+                                                  BitMaskFormat.cs
+                                                  FormattingParameters.cs
+
+                                                  Properties\AssemblyInfo.cs
+                                                  Properties\Resources.Designer.cs
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\WizardWrx.BitMath.dll"
+                 to "bin\Release\WizardWrx.BitMath.dll".
+  BitMath        -> C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll
+  Copying file from "obj\Release\WizardWrx.BitMath.pdb"
+                 to "bin\Release\WizardWrx.BitMath.pdb".
+
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\ " "-tC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll
+          Version    = 4.3.125.29248
+          File Date  = 2016-05-04 17:14:57 (2016-05-04 22:14:57 UTC)
+  Log File FQFN      = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BuildHistory.LOG
+          File Date  = 2016-05-04 17:14:57 (2016-05-04 22:14:57 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:04.08
+
+
+------ Build started: Project: TestStand, Configuration: Release x86 ------
+Build started 2016-05-04 17:14:57.
+
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 2016-05-04 17:14:57 (2016-05-04 22:14:57 UTC)
+          Build Number = 205
+  Sleeping for 3 seconds
+  Waking from cat nap
+
+CoreResGen:
+  "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\Resgen.exe" /useSourcePath
+
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                                       /r:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+                                                                       /r:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\_Deprecated_Libraries\SharedUtl2\SharedUtl2\bin\Release\WizardWrx.SharedUtl2.dll"
+
+                                                                       /compile Properties\Resources.resx,
+                                                                                obj\x86\Release\TestStand.Properties.Resources.resources
+
+  Processing resource file "Properties\Resources.resx"
+                      into "obj\x86\Release\TestStand.Properties.Resources.resources".
+
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe /noconfig
+                                                  /nowarn:1701,
+                                                          1702,
+                                                          2008
+                                                  /nostdlib+
+                                                  /platform:x86
+                                                  /errorreport:prompt
+                                                  /warn:4
+                                                  /define:TRACE
+                                                  /errorendlocation
+                                                  /preferreduilang:en-US
+                                                  /highentropyva-
+
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                  /reference:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+                                                  /reference:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\_Deprecated_Libraries\SharedUtl2\SharedUtl2\bin\Release\WizardWrx.SharedUtl2.dll"
+
+                                                  /debug:pdbonly
+                                                  /filealign:512
+                                                  /optimize+
+                                                  /out:obj\x86\Release\BithMathTestStand.exe
+
+                                                  /resource:obj\x86\Release\TestStand.Properties.Resources.resources
+
+                                                  /target:exe
+                                                  /utf8output
+                                                  /win32icon:WW_Icon1.ico
+
+                                                  Program.cs
+                                                  BitArray32TestStand.cs
+                                                  Util.cs
+
+                                                  Properties\Resources.Designer.cs
+                                                  Properties\AssemblyInfo.cs
+
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+                 to "bin\Release\WizardWrx.BitMath.dll".
+  Copying file from "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.pdb"
+                 to "bin\Release\WizardWrx.BitMath.pdb".
+  Copying file from "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.xml"
+                 to "bin\Release\WizardWrx.BitMath.xml".
+
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\BithMathTestStand.exe"
+                 to "bin\Release\BithMathTestStand.exe".
+  TestStand      -> C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe
+  Copying file from "obj\x86\Release\BithMathTestStand.pdb"
+                 to "bin\Release\BithMathTestStand.pdb".
+
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\ " "-tC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe
+          Version    = 4.0.205.29250
+          File Date  = 2016-05-04 17:15:00 (2016-05-04 22:15:00 UTC)
+  Log File FQFN      = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\BuildHistory.LOG
+          File Date  = 2016-05-04 17:15:01 (2016-05-04 22:15:01 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:03.56
+========== Build: 2 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+BOJ "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\
+scripts\BitMathExercises_RELEASE.CMD", version 2016-05-01 19:54
+
+
+----------------------------------------------
+Current date and time = 2016-05-04 17:36:08.50
+----------------------------------------------
+
+
+Date2FN, version 1.3.72.500
+Begin @ 2016-05-04 17:36:08.756 (2016-05-04 22:36:08.756 UTC)
+
+Original File Name       = ..\NOTES\BithMathTestStand_RELEASE.LOG
+Time Stamp Mask          = YYYYMMDD_hhmmss
+Flag File As Read Only   = True
+Directory Recursion Flag = False
+UQ Filespec Flag         = False
+New File Name            = ..\NOTES\BithMathTestStand_RELEASE_20160504_173608.LOG
+
+Date2FN End
+2016-05-04 17:36:08.850 (2016-05-04 22:36:08.850 UTC)
+Elapsed time: 0:00:00:00.093
+SmartRen version 1, 0, 0, 2
+Wed 04 May 2016 22:36:08 UTC
+Wed 04 May 2016 17:36:08 Local
+
+Input File  = BitArray32TestStand.CSV
+Output File = ..\NOTES\BitArray32TestStand_RELEASE.CSV
+Mutex Name  = SmartRen_BitArray32TestStand_CSV_B4414586_D8CA_4136_A088_CC4F03258232
+Mutex Wait  = 1 second
+
+Acquiring mutex.
+Mutex acquired.
+File BitArray32TestStand.CSV renamed ..\NOTES\BitArray32TestStand_RELEASE.CSV
+Mutex released.
+
+SmartRen EOJ
+<*>
+Date2FN, version 1.3.72.500
+Begin @ 2016-05-04 17:36:08.959 (2016-05-04 22:36:08.959 UTC)
+
+Original File Name       = ..\NOTES\BitArray32TestStand_RELEASE.CSV
+Time Stamp Mask          = YYYYMMDD_hhmmss
+Flag File As Read Only   = True
+Directory Recursion Flag = False
+UQ Filespec Flag         = False
+New File Name            = ..\NOTES\BitArray32TestStand_RELEASE_20160504_173608.CSV
+
+Date2FN End
+2016-05-04 17:36:09.068 (2016-05-04 22:36:09.068 UTC)
+Elapsed time: 0:00:00:00.124
+
+EOJ BitMathExercises_RELEASE.CMD
+
+WWPause version 3, 0, 0, 4
+Wed 04 May 2016 17:36:09 Local
+
+Please press RETURN when ready...

@@ -1,0 +1,780 @@
+                      Class Library BitMath Simplification
+
+================================================================================
+05/22/2014 12:12:33
+================================================================================
+
+------ Build started: Project: BitMath, Configuration: Debug Any CPU ------
+Build started 05/22/2014 12:11:18.
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 05/22/2014 12:11:19 (05/22/2014 17:11:19 UTC)
+          Build Number = 28
+  Sleeping for 3 seconds
+  Waking from cat nap
+CoreCompile:
+  C:\WINXP\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /doc:bin\Debug\WizardWrx.XML /define:DEBUG;TRACE /reference:C:\WINXP\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /reference:C:\WINXP\Microsoft.NET\Framework\v2.0.50727\System.dll /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\WizardWrx.BitMath.dll /target:library BitArray32.cs BitNumberFromPowerOfTwo.cs Properties\AssemblyInfo.cs
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Debug\WizardWrx.BitMath.dll" to "bin\Debug\WizardWrx.BitMath.dll".
+  BitMath -> C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll
+  Copying file from "obj\Debug\WizardWrx.BitMath.pdb" to "bin\Debug\WizardWrx.BitMath.pdb".
+IncrementalClean:
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.XML".
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\ " "-tC:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll
+          Version    = 3.0.28.20141
+          File Date  = 05/22/2014 12:11:22 (05/22/2014 17:11:22 UTC)
+  Log File FQFN      = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BuildHistory.LOG
+          File Date  = 05/22/2014 12:11:23 (05/22/2014 17:11:23 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:04.67
+------ Build started: Project: TestStand, Configuration: Debug x86 ------
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\BitArray32TestStand.cs(45,7): warning CS0105: The using directive for 'WizardWrx' appeared previously in this namespace
+
+Compile complete -- 0 errors, 1 warnings
+Build started 05/22/2014 12:11:23.
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 05/22/2014 12:11:23 (05/22/2014 17:11:23 UTC)
+          Build Number = 43
+  Sleeping for 3 seconds
+  Waking from cat nap
+CoreCompile:
+  C:\WINXP\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /platform:x86 /errorreport:prompt /warn:4 /define:DEBUG;TRACE /reference:C:\WINXP\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /reference:C:\WINXP\Microsoft.NET\Framework\v2.0.50727\System.dll /reference:"C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll" /reference:"C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2\bin\Release\WizardWrx.SharedUtl2.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\x86\Debug\BithMathTestStand.exe /target:exe /win32icon:WW_Icon1.ico BitArray32TestStand.cs Program.cs Properties\AssemblyInfo.cs
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll" to "bin\Debug\WizardWrx.BitMath.dll".
+  Copying file from "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.pdb" to "bin\Debug\WizardWrx.BitMath.pdb".
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Debug\BithMathTestStand.exe" to "bin\Debug\BithMathTestStand.exe".
+  TestStand -> C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\BithMathTestStand.exe
+  Copying file from "obj\x86\Debug\BithMathTestStand.pdb" to "bin\Debug\BithMathTestStand.pdb".
+IncrementalClean:
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\WizardWrx.BitMath.xml".
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\ " "-tC:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\BithMathTestStand.exe"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\BithMathTestStand.exe
+          Version    = 3.0.43.20143
+          File Date  = 05/22/2014 12:11:27 (05/22/2014 17:11:27 UTC)
+  Log File FQFN      = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\BuildHistory.LOG
+          File Date  = 05/22/2014 12:11:27 (05/22/2014 17:11:27 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:04.25
+========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
+
+
+================================================================================
+05/22/2014 13:01:34 - The two classes are consolidated into one. Rebuild the
+                      solution from scratch.
+================================================================================
+
+------ Rebuild All started: Project: BitMath, Configuration: Debug Any CPU ------
+Build started 05/22/2014 13:01:13.
+CoreClean:
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.pdb".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\obj\Debug\WizardWrx.BitMath.dll".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\obj\Debug\WizardWrx.BitMath.pdb".
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 05/22/2014 13:01:14 (05/22/2014 18:01:14 UTC)
+          Build Number = 30
+  Sleeping for 3 seconds
+  Waking from cat nap
+CoreCompile:
+  C:\WINXP\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig
+                                                      /nowarn:1701,1702
+                                                      /nostdlib+
+                                                      /errorreport:prompt
+                                                      /warn:4
+                                                      /doc:bin\Debug\WizardWrx.XML
+                                                      /define:DEBUG;TRACE
+
+                                                      /reference:C:\WINXP\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                      /reference:C:\WINXP\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                      /debug+
+                                                      /debug:full
+                                                      /filealign:512
+                                                      /optimize-
+                                                      /out:obj\Debug\WizardWrx.BitMath.dll
+                                                      /target:library
+
+                                                      BitArray32.cs
+                                                      Properties\AssemblyInfo.cs
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Debug\WizardWrx.BitMath.dll" to "bin\Debug\WizardWrx.BitMath.dll".
+  BitMath -> C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll
+  Copying file from "obj\Debug\WizardWrx.BitMath.pdb" to "bin\Debug\WizardWrx.BitMath.pdb".
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\ " "-tC:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll
+          Version    = 3.0.30.21638
+          File Date  = 05/22/2014 13:01:17 (05/22/2014 18:01:17 UTC)
+  Log File FQFN      = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BuildHistory.LOG
+          File Date  = 05/22/2014 13:01:17 (05/22/2014 18:01:17 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:03.98
+------ Rebuild All started: Project: TestStand, Configuration: Debug x86 ------
+Build started 05/22/2014 13:01:17.
+CoreClean:
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\obj\x86\Debug\ResolveAssemblyReference.cache".
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 05/22/2014 13:01:18 (05/22/2014 18:01:18 UTC)
+          Build Number = 45
+  Sleeping for 3 seconds
+  Waking from cat nap
+CoreCompile:
+  C:\WINXP\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig
+                                                      /nowarn:1701,1702
+                                                      /nostdlib+
+                                                      /platform:x86
+                                                      /errorreport:prompt
+                                                      /warn:4
+                                                      /define:DEBUG;TRACE
+
+                                                      /reference:C:\WINXP\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                      /reference:C:\WINXP\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                      /reference:"C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll"
+                                                      /reference:"C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2\bin\Release\WizardWrx.SharedUtl2.dll"
+
+                                                      /debug+
+                                                      /debug:full
+                                                      /filealign:512
+                                                      /optimize-
+                                                      /out:obj\x86\Debug\BithMathTestStand.exe
+                                                      /target:exe
+                                                      /win32icon:WW_Icon1.ico
+
+                                                      BitArray32TestStand.cs
+                                                      Program.cs
+                                                      Properties\AssemblyInfo.cs
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.dll" to "bin\Debug\WizardWrx.BitMath.dll".
+  Copying file from "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Debug\WizardWrx.BitMath.pdb" to "bin\Debug\WizardWrx.BitMath.pdb".
+_CopyAppConfigFile:
+  Copying file from "app.config" to "bin\Debug\BithMathTestStand.exe.config".
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Debug\BithMathTestStand.exe" to "bin\Debug\BithMathTestStand.exe".
+  TestStand -> C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\BithMathTestStand.exe
+  Copying file from "obj\x86\Debug\BithMathTestStand.pdb" to "bin\Debug\BithMathTestStand.pdb".
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\ " "-tC:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\BithMathTestStand.exe"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\BithMathTestStand.exe
+          Version    = 3.0.45.21640
+          File Date  = 05/22/2014 13:01:21 (05/22/2014 18:01:21 UTC)
+  Log File FQFN      = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\BuildHistory.LOG
+          File Date  = 05/22/2014 13:01:21 (05/22/2014 18:01:21 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:03.96
+========== Rebuild All: 2 succeeded, 0 failed, 0 skipped ==========
+
+
+================================================================================
+05/22/2014 13:05:11 - To be on the safe side, repeat the whhole test set.
+================================================================================
+
+
+-------
+STDOUT:
+-------
+
+BOJ BithMathTestStand, Version=3.0.45.21640, Culture=neutral, PublicKeyToken=null
+
+Working Directory = C:\Documents and Settings\DAG\My Documents\Visual Studio 201
+0\Projects\WizardWrx_Libs\BitMath\NOTES
+Begin BitArray32TestStand Exercises
+
+    Test # 1 - Display public constants.
+
+        Bit  1      = 00000001
+        Bit  2      = 00000002
+        Bit  3      = 00000004
+        Bit  4      = 00000008
+        Bit  5      = 00000010
+        Bit  6      = 00000020
+        Bit  7      = 00000040
+        Bit  8      = 00000080
+        Bit  9      = 00000100
+        Bit 10      = 00000200
+        Bit 11      = 00000400
+        Bit 12      = 00000800
+        Bit 13      = 00001000
+        Bit 14      = 00002000
+        Bit 15      = 00004000
+        Bit 16      = 00008000
+        Bit 17      = 00010000
+        Bit 18      = 00020000
+        Bit 19      = 00040000
+        Bit 20      = 00080000
+        Bit 21      = 00100000
+        Bit 22      = 00200000
+        Bit 23      = 00400000
+        Bit 24      = 00800000
+        Bit 25      = 01000000
+        Bit 26      = 02000000
+        Bit 27      = 04000000
+        Bit 28      = 08000000
+        Bit 29      = 10000000
+        Bit 30      = 20000000
+        Bit 31      = 40000000
+        Bit 32      = 80000000
+        BIT_NBR_MIN = 1
+        BIT_NBR_MAX = 32
+        OFF         = False
+        ON          = True
+
+    Test # 2 - Default Constructor.
+
+        Initial value of default BitArray32 = 00000000
+        Bit 10 was turned ON. Mask1 = 00000200
+
+    Test # 3 - First overloaded Constructor.
+
+        Initial value of Overloaded BitArray32 = 00000040
+        Bit 10 was turned ON. Mask2 = 00000240
+        Bit 7 was truend OFF. Mask2 = 00000200
+        Bit 10 is ON
+        Bit 7 is OFF
+        Bit 10 is NOT OFF
+        Bit 7 is OFF
+
+Begin RealWorldTests
+
+    New s_aenmStackTraceDisp value             = Stack (  4)
+        New s_aenmAppSubsystem value           = 0 (  0)
+            New s_aenmLoggingState value       = EventLog (  8)
+                Test Case   1 OptionFlags Ante =   3
+                Test Case   1 OptionFlags Post =  15
+            New s_aenmLoggingState value       = 0 (  0)
+                Test Case   2 OptionFlags Ante =  15
+                Test Case   2 OptionFlags Post =   7
+        New s_aenmAppSubsystem value           = StandardError ( 32)
+            New s_aenmLoggingState value       = EventLog (  8)
+                Test Case   3 OptionFlags Ante =   7
+                Test Case   3 OptionFlags Post =  47
+            New s_aenmLoggingState value       = 0 (  0)
+                Test Case   4 OptionFlags Ante =  47
+                Test Case   4 OptionFlags Post =  39
+        New s_aenmAppSubsystem value           = StandardError ( 32)
+            New s_aenmLoggingState value       = EventLog (  8)
+                Test Case   5 OptionFlags Ante =  39
+                Test Case   5 OptionFlags Post =  47
+            New s_aenmLoggingState value       = 0 (  0)
+                Test Case   6 OptionFlags Ante =  47
+                Test Case   6 OptionFlags Post =  39
+        New s_aenmAppSubsystem value           = 0 (  0)
+            New s_aenmLoggingState value       = EventLog (  8)
+                Test Case   7 OptionFlags Ante =  39
+                Test Case   7 OptionFlags Post =  15
+            New s_aenmLoggingState value       = 0 (  0)
+                Test Case   8 OptionFlags Ante =  15
+                Test Case   8 OptionFlags Post =   7
+        New s_aenmAppSubsystem value           = 0 (  0)
+            New s_aenmLoggingState value       = EventLog (  8)
+                Test Case   9 OptionFlags Ante =   7
+                Test Case   9 OptionFlags Post =  15
+            New s_aenmLoggingState value       = 0 (  0)
+                Test Case  10 OptionFlags Ante =  15
+                Test Case  10 OptionFlags Post =   7
+    New s_aenmStackTraceDisp value             = 0 (  0)
+        New s_aenmAppSubsystem value           = 0 (  0)
+            New s_aenmLoggingState value       = EventLog (  8)
+                Test Case  11 OptionFlags Ante =   7
+                Test Case  11 OptionFlags Post =  11
+            New s_aenmLoggingState value       = 0 (  0)
+                Test Case  12 OptionFlags Ante =  11
+                Test Case  12 OptionFlags Post =   3
+        New s_aenmAppSubsystem value           = StandardError ( 32)
+            New s_aenmLoggingState value       = EventLog (  8)
+                Test Case  13 OptionFlags Ante =   3
+                Test Case  13 OptionFlags Post =  43
+            New s_aenmLoggingState value       = 0 (  0)
+                Test Case  14 OptionFlags Ante =  43
+                Test Case  14 OptionFlags Post =  35
+        New s_aenmAppSubsystem value           = StandardError ( 32)
+            New s_aenmLoggingState value       = EventLog (  8)
+                Test Case  15 OptionFlags Ante =  35
+                Test Case  15 OptionFlags Post =  43
+            New s_aenmLoggingState value       = 0 (  0)
+                Test Case  16 OptionFlags Ante =  43
+                Test Case  16 OptionFlags Post =  35
+        New s_aenmAppSubsystem value           = 0 (  0)
+            New s_aenmLoggingState value       = EventLog (  8)
+                Test Case  17 OptionFlags Ante =  35
+                Test Case  17 OptionFlags Post =  11
+            New s_aenmLoggingState value       = 0 (  0)
+                Test Case  18 OptionFlags Ante =  11
+                Test Case  18 OptionFlags Post =   3
+        New s_aenmAppSubsystem value           = 0 (  0)
+            New s_aenmLoggingState value       = EventLog (  8)
+                Test Case  19 OptionFlags Ante =   3
+                Test Case  19 OptionFlags Post =  11
+            New s_aenmLoggingState value       = 0 (  0)
+                Test Case  20 OptionFlags Ante =  11
+                Test Case  20 OptionFlags Post =   3
+RealWorldTests Done
+
+
+End BitArray32TestStand Exercises
+
+Begin TestSpecificBits
+
+    Test  1: Bit Value =   4 (00000004) - Bit Number =  3
+    Test  2: Bit Value =  32 (00000020) - Bit Number =  6
+    Test  3: Bit Value =   8 (00000008) - Bit Number =  4
+    Test  4: Bit Value =  16 (00000010) - Bit Number =  5
+    Test  5: Bit Value =   1 (00000001) - Bit Number =  1
+
+    Test  6 Ante =  6 - b32 = 00000006
+            Post = 38 - b32 = 00000026
+
+    Test  7 Ante = 38 - b32 = 00000026
+            Post =  6 - b32 = 00000006
+
+TestSpecificBits Done
+
+EOJ
+
+
+------------------------------------------
+Visual Studio Interactive Debugger Output:
+------------------------------------------
+
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\WINXP\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll'
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\WINXP\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities\10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.dll'
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\WINXP\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll'
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\WINXP\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll'
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\WINXP\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\WINXP\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities.Sync\10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.Sync.dll'
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\WINXP\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll'
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\BithMathTestStand.vshost.exe'
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\WINXP\assembly\GAC_MSIL\WizardWrx.SharedUtl2\2.69.212.31430__17d2d8ea40c2dbbc\WizardWrx.SharedUtl2.dll', Symbols loaded.
+The thread 'vshost.NotifyLoad' (0xef4) has exited with code 0 (0x0).
+The thread '<No Name>' (0x934) has exited with code 0 (0x0).
+The thread 'vshost.LoadReference' (0xb54) has exited with code 0 (0x0).
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\BithMathTestStand.exe', Symbols loaded.
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Debug\WizardWrx.BitMath.dll', Symbols loaded.
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\WINXP\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'
+'BithMathTestStand.vshost.exe' (Managed (v2.0.50727)): Loaded 'C:\WINXP\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll'
+The thread '<Thread Ended>' (0x7e4) has exited with code 0 (0x0).
+The program '[3436] BithMathTestStand.vshost.exe: Managed (v2.0.50727)' has exited with code 0 (0x0).
+
+
+------------------------------------------------
+Comparison of Real World Test Case Output Files:
+------------------------------------------------
+
+Microsoft Windows XP [Version 5.1.2600]
+(C) Copyright 1985-2001 Microsoft Corp.
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\NOTES>Date2FN -r BitArray32TestStand.CSV
+Date2FN, version 1.5.95.2663
+Begin @ 05/22/2014 13:08:14.388 (05/22/2014 18:08:14.388 UTC)
+
+Original File Name       = BitArray32TestStand.CSV
+Time Stamp Mask          = YYYYMMDD_hhmmss
+Flag File As Read Only   = True
+Directory Recursion Flag = False
+UQ Filespec Flag         = False
+New File Name            = BitArray32TestStand_20140522_130548.CSV
+
+Date2FN End
+05/22/2014 13:08:14.685 (05/22/2014 18:08:14.685 UTC)
+Elapsed time: 0:00:00:00.296
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\NOTES>fc BitArray32TestStand_20140522_025534.CSV BitArray32TestStand_20140522_130548.CSV /b
+Comparing files BitArray32TestStand_20140522_025534.CSV and BITARRAY32TESTSTAND_20140522_130548.CSV
+FC: no differences encountered
+
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\NOTES>
+
+
+
+================================================================================
+05/22/2014 13:10:22 - Create a new Release build from scratch.
+================================================================================
+
+------ Rebuild All started: Project: BitMath, Configuration: Release Any CPU ------
+Build started 05/22/2014 13:09:16.
+CoreClean:
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.pdb".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.XML".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\obj\Release\WizardWrx.BitMath.dll".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\obj\Release\WizardWrx.BitMath.pdb".
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 05/22/2014 13:09:16 (05/22/2014 18:09:16 UTC)
+          Build Number = 31
+  Sleeping for 3 seconds
+  Waking from cat nap
+CoreCompile:
+  C:\WINXP\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig
+                                                      /nowarn:1701,1702
+                                                      /nostdlib+
+                                                      /errorreport:prompt
+                                                      /warn:4
+                                                      /doc:bin\Release\WizardWrx.XML
+                                                      /define:TRACE
+
+                                                      /reference:C:\WINXP\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                      /reference:C:\WINXP\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                      /debug:pdbonly
+                                                      /filealign:512
+                                                      /optimize+
+                                                      /out:obj\Release\WizardWrx.BitMath.dll
+                                                      /target:library
+
+                                                      BitArray32.cs
+                                                      Properties\AssemblyInfo.cs
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\WizardWrx.BitMath.dll" to "bin\Release\WizardWrx.BitMath.dll".
+  BitMath -> C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll
+  Copying file from "obj\Release\WizardWrx.BitMath.pdb" to "bin\Release\WizardWrx.BitMath.pdb".
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\ " "-tC:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll
+          Version    = 3.0.31.21879
+          File Date  = 05/22/2014 13:09:19 (05/22/2014 18:09:19 UTC)
+  Log File FQFN      = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BuildHistory.LOG
+          File Date  = 05/22/2014 13:09:20 (05/22/2014 18:09:20 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:04.01
+------ Rebuild All started: Project: TestStand, Configuration: Release x86 ------
+Build started 05/22/2014 13:09:20.
+CoreClean:
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe.config".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.pdb".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\WizardWrx.BitMath.dll".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\WizardWrx.BitMath.pdb".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\WizardWrx.BitMath.xml".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\obj\x86\Release\ResolveAssemblyReference.cache".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\obj\x86\Release\BithMathTestStand.exe".
+  Deleting file "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\obj\x86\Release\BithMathTestStand.pdb".
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 05/22/2014 13:09:20 (05/22/2014 18:09:20 UTC)
+          Build Number = 46
+  Sleeping for 3 seconds
+  Waking from cat nap
+CoreCompile:
+  C:\WINXP\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig
+                                                      /nowarn:1701,1702
+                                                      /nostdlib+
+                                                      /platform:x86
+                                                      /errorreport:prompt
+                                                      /warn:4
+                                                      /define:TRACE
+
+                                                      /reference:C:\WINXP\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                      /reference:C:\WINXP\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                      /reference:"C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+                                                      /reference:"C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2\bin\Release\WizardWrx.SharedUtl2.dll"
+
+                                                      /debug:pdbonly
+                                                      /filealign:512
+                                                      /optimize+
+                                                      /out:obj\x86\Release\BithMathTestStand.exe
+                                                      /target:exe
+                                                      /win32icon:WW_Icon1.ico
+
+                                                      BitArray32TestStand.cs
+                                                      Program.cs
+                                                      Properties\AssemblyInfo.cs
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll" to "bin\Release\WizardWrx.BitMath.dll".
+  Copying file from "C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.pdb" to "bin\Release\WizardWrx.BitMath.pdb".
+_CopyAppConfigFile:
+  Copying file from "app.config" to "bin\Release\BithMathTestStand.exe.config".
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\BithMathTestStand.exe" to "bin\Release\BithMathTestStand.exe".
+  TestStand -> C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe
+  Copying file from "obj\x86\Release\BithMathTestStand.pdb" to "bin\Release\BithMathTestStand.pdb".
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\ " "-tC:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe
+          Version    = 3.0.46.21881
+          File Date  = 05/22/2014 13:09:23 (05/22/2014 18:09:23 UTC)
+  Log File FQFN      = C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\BuildHistory.LOG
+          File Date  = 05/22/2014 13:09:24 (05/22/2014 18:09:24 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:03.98
+========== Rebuild All: 2 succeeded, 0 failed, 0 skipped ==========
+
+
+================================================================================
+05/22/2014 13:23:07 - Clean up the solution directory.
+================================================================================
+
+Microsoft Windows XP [Version 5.1.2600]
+(C) Copyright 1985-2001 Microsoft Corp.
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>dir *.bak /s
+ Volume in drive C is SYS
+ Volume Serial Number is 2430-E62E
+
+ Directory of C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath
+
+05/22/2014  01:34            21,485 BitArray32.cs.bak
+05/22/2014  03:40             2,535 BitMath.csproj.bak
+05/22/2014  03:43            22,527 BitNumberFromPowerOfTwo.cs.bak
+               3 File(s)         46,547 bytes
+
+ Directory of C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\Properties
+
+05/22/2014  03:44             1,512 AssemblyInfo.cs.bak
+               1 File(s)          1,512 bytes
+
+ Directory of C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand
+
+05/22/2014  02:54            18,043 BitArray32TestStand.cs.bak
+05/22/2014  02:54             6,003 Program.cs.bak
+               2 File(s)         24,046 bytes
+
+ Directory of C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\Properties
+
+05/22/2014  03:44             1,509 AssemblyInfo.cs.bak
+               1 File(s)          1,509 bytes
+
+     Total Files Listed:
+               7 File(s)         73,614 bytes
+               0 Dir(s)  43,664,515,072 bytes free
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>sdelete -s *.bak
+
+SDelete - Secure Delete v1.61
+Copyright (C) 1999-2012 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+SDelete is set for 1 pass.
+BitMath\BitArray32.cs.bak...deleted.
+BitMath\BitMath.csproj.bak...deleted.
+BitMath\BitNumberFromPowerOfTwo.cs.bak...deleted.
+BitMath\Properties\AssemblyInfo.cs.bak...deleted.
+TestStand\BitArray32TestStand.cs.bak...deleted.
+TestStand\Program.cs.bak...deleted.
+TestStand\Properties\AssemblyInfo.cs.bak...deleted.
+7 files found
+
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>dir *(?).* /s
+ Volume in drive C is SYS
+ Volume Serial Number is 2430-E62E
+
+ Directory of C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath
+
+05/22/2014  01:34            21,485 BitArray32(0).cs
+05/22/2014  03:40             2,535 BitMath(0).csproj
+05/22/2014  03:43            22,527 BitNumberFromPowerOfTwo(0).cs
+               3 File(s)         46,547 bytes
+
+ Directory of C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\Properties
+
+05/22/2014  03:44             1,512 AssemblyInfo(0).cs
+               1 File(s)          1,512 bytes
+
+ Directory of C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand
+
+05/22/2014  02:54            18,043 BitArray32TestStand(0).cs
+05/22/2014  02:54             6,003 Program(0).cs
+               2 File(s)         24,046 bytes
+
+ Directory of C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\Properties
+
+05/22/2014  03:44             1,509 AssemblyInfo(0).cs
+               1 File(s)          1,509 bytes
+
+     Total Files Listed:
+               7 File(s)         73,614 bytes
+               0 Dir(s)  43,664,601,088 bytes free
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx
+_Libs\BitMath>sdelete -s *(?).*
+
+SDelete - Secure Delete v1.61
+Copyright (C) 1999-2012 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+SDelete is set for 1 pass.
+BitMath\BitArray32(0).cs...deleted.
+BitMath\BitMath(0).csproj...deleted.
+BitMath\BitNumberFromPowerOfTwo(0).cs...deleted.
+BitMath\Properties\AssemblyInfo(0).cs...deleted.
+TestStand\BitArray32TestStand(0).cs...deleted.
+TestStand\Program(0).cs...deleted.
+TestStand\Properties\AssemblyInfo(0).cs...deleted.
+7 files found
+
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib *.csproj +r /s
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib *.csproj    /s
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BitMath.csproj
+     R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\TestStand.csproj
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib *.cs +r /s
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib *.cs    /s
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\Properties\AssemblyInfo.cs
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\Properties\AssemblyInfo.cs
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\BitArray32TestStand.cs
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\Program.cs
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib *.txt +r /s
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib *.txt    /s
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\obj\Debug\BitMath.csproj.FileListAbsolute.txt
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\obj\Release\BitMath.csproj.FileListAbsolute.txt
+     R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes.TXT
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\NOTES\Simplifcation_Notes.TXT
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\obj\x86\Debug\TestStand.csproj.FileListAbsolute.txt
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\obj\x86\Release\TestStand.csproj.FileListAbsolute.txt
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib *.txt -r /s
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib *.txt    /s
+A          C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\obj\Debug\BitMath.csproj.FileListAbsolute.txt
+A          C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\obj\Release\BitMath.csproj.FileListAbsolute.txt
+           C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes.TXT
+A          C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\NOTES\Simplifcation_Notes.TXT
+A          C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\obj\x86\Debug\TestStand.csproj.FileListAbsolute.txt
+A          C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\obj\x86\Release\TestStand.csproj.FileListAbsolute.txt
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib NOTES\*.TXT
+           C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes.TXT
+A          C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\NOTES\Simplifcation_Notes.TXT
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib NOTES\*.TXT +r
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib NOTES\*.TXT
+     R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes.TXT
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\NOTES\Simplifcation_Notes.TXT
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib NOTES\Simplification_Notes.TXT
+File not found - NOTES\Simplification_Notes.TXT
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib NOTES\Simplifcation_Notes.TXT
+A    R     C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\NOTES\Simplifcation_Notes.TXT
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>attrib NOTES\Simplifcation_Notes.TXT -r
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>ren NOTES\Simplifcation_Notes.TXT Simplification_Notes.TXT
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath>
+
+
+================================================================================
+05/22/2014 13:25:22 - Scan for uses of the broken BitOff method of BitMask32.
+================================================================================
+
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\ApplicationHelpers\ApplicationHelpersTestHarness\ApplicationHelpersTestHarness\Program.cs^1188^                                 b32Flags.BitOff ( ( int ) BitNumberFromPowerOfTwo.BitNumber ( ( UInt32 ) ExceptionLogger.OutputOptions.StandardError ) );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\ApplicationHelpers\ApplicationHelpersTestHarness\ApplicationHelpersTestHarness\Program.cs^1193^                                 b32Flags.BitOff ( ( int ) BitNumberFromPowerOfTwo.BitNumber ( ( UInt32 ) ExceptionLogger.OutputOptions.Stack ) );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\ApplicationHelpers\ApplicationHelpersTestHarness\ApplicationHelpersTestHarness\Program.cs^1198^                                 b32Flags.BitOff ( ( int ) BitNumberFromPowerOfTwo.BitNumber ( ( UInt32 ) ExceptionLogger.OutputOptions.EventLog ) );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs^36^                         Thursday, 22 May 2014 - Finally got TurnBitOff right!
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs^697^         public void BitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs^701^         }   // BitOff
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs^741^         /// Unlike the BitOff and BitOn operators, everything is already cast to
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs^748^         public bool IsBitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs^756^         }   // IsBitOff
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs^773^         /// Unlike the BitOff and BitOn operators, everything is already cast to
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs^944^         public static BitArray32 TurnBitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs^959^         }   // static TurnBitOff method
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs^975^         /// This method and its companion, TurnBitOff, bounds checks its input,
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\BitArray32TestStand.cs^222^             Mask2.BitOff ( 7 );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\BitArray32TestStand.cs^235^             if ( Mask2.IsBitOff ( 10 ) )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\BitArray32TestStand.cs^240^             if ( Mask2.IsBitOff ( 7 ) )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\BitArray32TestStand.cs^338^                             b32Flags.BitOff ( ( int ) BitArray32.BitNumber ( ( UInt32 ) OutputOptions.StandardError ) );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\BitArray32TestStand.cs^343^                             b32Flags.BitOff ( ( int ) BitArray32.BitNumber ( ( UInt32 ) OutputOptions.Stack ) );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\BitArray32TestStand.cs^348^                             b32Flags.BitOff ( ( int ) BitArray32.BitNumber ( ( UInt32 ) OutputOptions.EventLog ) );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\BitMath\TestStand\Program.cs^157^             b32.BitOff ( BIT_6 );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2\BitMask32.cs^296^       public void BitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2\BitMask32.cs^300^       }   // End of BitOff instance method
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2\BitMask32.cs^341^       /// Unlike the BitOff and BitOn operators, everything is already cast to
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2\BitMask32.cs^348^       public bool IsBitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2\BitMask32.cs^355^       }   // End of IsBitOff instance method.
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2\BitMask32.cs^372^       /// Unlike the BitOff and BitOn operators, everything is already cast to
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2\BitMask32.cs^414^       public static BitMask32 TurnBitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2\BitMask32.cs^428^       }   // End of static TurnBitOff method
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2\BitMask32.cs^442^       /// This method and its companion, TurnBitOff, bounds checks its input,
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2_Test_Harness\SharedUtl2_Test_Harness\Bitmask32TestHarness.cs^111^           Mask2.BitOff ( 7 );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2_Test_Harness\SharedUtl2_Test_Harness\Bitmask32TestHarness.cs^124^           if ( Mask2.IsBitOff ( 10 ) )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl2\SharedUtl2_Test_Harness\SharedUtl2_Test_Harness\Bitmask32TestHarness.cs^129^           if ( Mask2.IsBitOff ( 7 ) )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl3\SharedUtl3\BitMask32.cs^254^       public void BitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl3\SharedUtl3\BitMask32.cs^258^       }   // End of BitOff instance method
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl3\SharedUtl3\BitMask32.cs^286^       public bool IsBitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl3\SharedUtl3\BitMask32.cs^293^       }   // End of IsBitOff instance method.
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl3\SharedUtl3\BitMask32.cs^341^       public static BitMask32 TurnBitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl3\SharedUtl3\BitMask32.cs^355^       }   // End of static TurnBitOff method
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl3\SharedUtl3\BitMask32.cs^369^       /// This method and its companion, TurnBitOff, bounds checks its input,
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl3\SharedUtl3_TestHarness\SharedUtl3_TestHarness\Bitmask32TestHarness.cs^103^             Mask2.BitOff ( 7 );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl3\SharedUtl3_TestHarness\SharedUtl3_TestHarness\Bitmask32TestHarness.cs^116^             if ( Mask2.IsBitOff ( 10 ) )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\WizardWrx_Libs\SharedUtl3\SharedUtl3_TestHarness\SharedUtl3_TestHarness\Bitmask32TestHarness.cs^121^             if ( Mask2.IsBitOff ( 7 ) )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_Laboratory\MyPlayPen\MyPlayPen\BitMask32.cs^223^        public void BitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_Laboratory\MyPlayPen\MyPlayPen\BitMask32.cs^227^        }   // End of BitOff instance method
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_Laboratory\MyPlayPen\MyPlayPen\BitMask32.cs^255^        public bool IsBitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_Laboratory\MyPlayPen\MyPlayPen\BitMask32.cs^262^        }   // End of IsBitOff instance method.
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_Laboratory\MyPlayPen\MyPlayPen\BitMask32.cs^310^        public static BitMask32 TurnBitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_Laboratory\MyPlayPen\MyPlayPen\BitMask32.cs^324^        }   // End of static TurnBitOff method
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_Laboratory\MyPlayPen\MyPlayPen\BitMask32.cs^338^        /// This method and its companion, TurnBitOff, bounds checks its input,
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_Laboratory\MyPlayPen\MyPlayPen\Bitmask32TestHarness.cs^80^          Mask2.BitOff ( 7 );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_Laboratory\MyPlayPen\MyPlayPen\Bitmask32TestHarness.cs^93^          if ( Mask2.IsBitOff ( 10 ) )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_Laboratory\MyPlayPen\MyPlayPen\Bitmask32TestHarness.cs^98^          if ( Mask2.IsBitOff ( 7 ) )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_Laboratory\MyPlayPen\MyPlayPen\Program.cs^528^             b32.BitOff ( BIT_6 );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_TESTING WizardWrx Libs\SharedUtl2\SharedUtl2\BitMask32.cs^296^      public void BitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_TESTING WizardWrx Libs\SharedUtl2\SharedUtl2\BitMask32.cs^300^      }   // End of BitOff instance method
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_TESTING WizardWrx Libs\SharedUtl2\SharedUtl2\BitMask32.cs^341^      /// Unlike the BitOff and BitOn operators, everything is already cast to
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_TESTING WizardWrx Libs\SharedUtl2\SharedUtl2\BitMask32.cs^348^      public bool IsBitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_TESTING WizardWrx Libs\SharedUtl2\SharedUtl2\BitMask32.cs^355^      }   // End of IsBitOff instance method.
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_TESTING WizardWrx Libs\SharedUtl2\SharedUtl2\BitMask32.cs^372^      /// Unlike the BitOff and BitOn operators, everything is already cast to
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_TESTING WizardWrx Libs\SharedUtl2\SharedUtl2\BitMask32.cs^414^      public static BitMask32 TurnBitOff ( int pintBitNumber )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_TESTING WizardWrx Libs\SharedUtl2\SharedUtl2\BitMask32.cs^428^      }   // End of static TurnBitOff method
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_TESTING WizardWrx Libs\SharedUtl2\SharedUtl2\BitMask32.cs^442^      /// This method and its companion, TurnBitOff, bounds checks its input,
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_TESTING WizardWrx Libs\SharedUtl2\SharedUtl2_Test_Harness\SharedUtl2_Test_Harness\Bitmask32TestHarness.cs^111^          Mask2.BitOff ( 7 );
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_TESTING WizardWrx Libs\SharedUtl2\SharedUtl2_Test_Harness\SharedUtl2_Test_Harness\Bitmask32TestHarness.cs^124^          if ( Mask2.IsBitOff ( 10 ) )
+C:\Documents and Settings\DAG\My Documents\Visual Studio 2010\Projects\_TESTING WizardWrx Libs\SharedUtl2\SharedUtl2_Test_Harness\SharedUtl2_Test_Harness\Bitmask32TestHarness.cs^129^          if ( Mask2.IsBitOff ( 7 ) )

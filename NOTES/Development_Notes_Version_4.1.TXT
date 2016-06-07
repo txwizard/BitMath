@@ -1,0 +1,454 @@
+            Development Notes for Class Library BitMath, Version 4.1
+
+================================================================================
+2016-04-30 15:13:11 - Resolve the cause of the ArgumentOutOfRangeException shown
+                      below. This error was discovered in the course of building
+                      my graphical ViewBits tool.
+================================================================================
+
+System.ArgumentOutOfRangeException was unhandled
+  IsTransient=false
+  Message=Index and length must refer to a location within the string.
+Parameter name: length
+  Source=mscorlib
+  ParamName=length
+  StackTrace:
+       at System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+       at WizardWrx.BitArray32.TrimRuler(String pstrWholeRuler, RulerLength penmRulerLength) in c:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs:line 1275
+       at WizardWrx.BitArray32.GetRulerTens(RulerLength penmRulerLength) in c:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BitArray32.cs:line 1134
+       at ViewBits.frmMain.frmMain_Load(Object sender, EventArgs e) in c:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\ViewBits\Form1.cs:line 60
+       at System.Windows.Forms.Form.OnLoad(EventArgs e)
+       at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+       at System.Windows.Forms.Control.CreateControl()
+       at System.Windows.Forms.Control.WmShowWindow(Message& m)
+       at System.Windows.Forms.Control.WndProc(Message& m)
+       at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+       at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+  InnerException:
+
+        pstrWholeRuler  "         1         2         3         4         5         6"  string
+        penmRulerLength Ruler64 WizardWrx.BitArray32.RulerLength
+        BEGINNING   0x00000000  int
+
+'ViewBits.vshost.exe' (CLR v2.0.50727: ViewBits.vshost.exe): Loaded 'C:\Windows\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll'. Symbols loaded.
+'ViewBits.vshost.exe' (CLR v2.0.50727: ViewBits.vshost.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.dll'. Symbols loaded.
+'ViewBits.vshost.exe' (CLR v2.0.50727: ViewBits.vshost.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll'. Symbols loaded.
+'ViewBits.vshost.exe' (CLR v2.0.50727: ViewBits.vshost.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll'. Symbols loaded.
+'ViewBits.vshost.exe' (CLR v2.0.50727: ViewBits.vshost.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'. Symbols loaded.
+'ViewBits.vshost.exe' (CLR v2.0.50727: ViewBits.vshost.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities.Sync\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.Sync.dll'. Symbols loaded.
+'ViewBits.vshost.exe' (CLR v2.0.50727: ViewBits.vshost.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll'.
+'ViewBits.vshost.exe' (CLR v2.0.50727: ViewBits.vshost.exe): Loaded 'C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\ViewBits\bin\Debug\ViewBits.vshost.exe'. Symbols loaded.
+The thread 0x19d8 has exited with code 259 (0x103).
+The thread 0x1768 has exited with code 259 (0x103).
+'ViewBits.vshost.exe' (CLR v2.0.50727: ViewBits.vshost.exe): Loaded 'C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\ViewBits\bin\Debug\ViewBits.exe'. Symbols loaded.
+'ViewBits.vshost.exe' (CLR v2.0.50727: ViewBits.vshost.exe): Loaded 'C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\ViewBits\bin\Debug\WizardWrx.BitMath.dll'. Symbols loaded.
+A first chance exception of type 'System.ArgumentOutOfRangeException' occurred in mscorlib.dll
+'ViewBits.vshost.exe' (CLR v2.0.50727: ViewBits.vshost.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Symbols loaded.
+'ViewBits.vshost.exe' (CLR v2.0.50727: ViewBits.vshost.exe): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll'. Symbols loaded.
+The program '[0x18D4] ViewBits.vshost.exe' has exited with code -1 (0xffffffff).
+
+
+================================================================================
+2016-04-30 13:26:00 - Rebuild the library to incorporate the correction noted
+                      above.
+================================================================================
+
+------ Build started: Project: BitMath, Configuration: Release Any CPU ------
+Build started 2016-04-30 13:25:37.
+
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 2016-04-30 13:25:37 (2016-04-30 18:25:37 UTC)
+          Build Number = 100
+  Sleeping for 3 seconds
+  Waking from cat nap
+
+CoreResGen:
+  No resources are out of date with respect to their source files. Skipping resource generation.
+
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe /noconfig
+                                                  /nowarn:1701,
+                                                          1702,
+                                                          2008
+                                                  /nostdlib+
+                                                  /errorreport:prompt
+                                                  /warn:4
+                                                  /doc:bin\Release\WizardWrx.BitMath.XML
+                                                  /define:TRACE
+                                                  /errorendlocation
+                                                  /preferreduilang:en-US
+                                                  /highentropyva-
+
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                  /debug:pdbonly
+                                                  /filealign:512
+                                                  /optimize+
+                                                  /out:obj\Release\WizardWrx.BitMath.dll
+
+                                                  /resource:obj\Release\WizardWrx.Properties.Resources.resources
+
+                                                  /target:library
+                                                  /utf8output
+
+                                                  BCLIntegerTypeInfo.cs
+                                                  BitArray32.cs
+                                                  BitHelpers.cs
+                                                  BitMaskFormat.cs
+                                                  FormattingParameters.cs
+
+                                                  Properties\AssemblyInfo.cs
+                                                  Properties\Resources.Designer.cs
+
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Release\WizardWrx.BitMath.dll"
+                 to "bin\Release\WizardWrx.BitMath.dll".
+  BitMath       -> C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll
+  Copying file from "obj\Release\WizardWrx.BitMath.pdb"
+                 to "bin\Release\WizardWrx.BitMath.pdb".
+
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\ " "-tC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll
+          Version    = 4.1.100.22370
+          File Date  = 2016-04-30 13:25:40 (2016-04-30 18:25:40 UTC)
+  Log File FQFN      = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\BuildHistory.LOG
+          File Date  = 2016-04-30 13:25:41 (2016-04-30 18:25:41 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:03.94
+
+
+------ Build started: Project: TestStand, Configuration: Release x86 ------
+Build started 2016-04-30 13:25:41.
+
+PreBuildEvent:
+  wwBldNbrMgr.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\ "
+  Build Task           = IncrementBuildNbr
+  AssemblyInfo File    = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\Properties\AssemblyInfo.cs
+          Project Type = CSharp
+          File Date    = 2016-04-30 13:25:41 (2016-04-30 18:25:41 UTC)
+          Build Number = 155
+  Sleeping for 3 seconds
+  Waking from cat nap
+
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe /noconfig
+                                                  /nowarn:1701,
+                                                          1702,
+                                                          2008
+                                                  /nostdlib+
+                                                  /platform:x86
+                                                  /errorreport:prompt
+                                                  /warn:4
+                                                  /define:TRACE
+                                                  /errorendlocation
+                                                  /preferreduilang:en-US
+                                                  /highentropyva-
+
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+
+                                                  /reference:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+                                                  /reference:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\_Deprecated_Libraries\SharedUtl2\SharedUtl2\bin\Release\WizardWrx.SharedUtl2.dll"
+
+                                                  /debug:pdbonly
+                                                  /filealign:512
+                                                  /optimize+
+                                                  /out:obj\x86\Release\BithMathTestStand.exe
+                                                  /target:exe
+                                                  /utf8output
+                                                  /win32icon:WW_Icon1.ico
+
+                                                  Program.cs
+                                                  BitArray32TestStand.cs
+                                                  Util.cs
+
+                                                  Properties\AssemblyInfo.cs
+
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+                 to "bin\Release\WizardWrx.BitMath.dll".
+  Copying file from "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.pdb"
+                 to "bin\Release\WizardWrx.BitMath.pdb".
+  Copying file from "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.xml"
+                 to "bin\Release\WizardWrx.BitMath.xml".
+
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+
+CopyFilesToOutputDirectory:
+  Copying file from "obj\x86\Release\BithMathTestStand.exe"
+                 to "bin\Release\BithMathTestStand.exe".
+  TestStand      -> C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe
+  Copying file from "obj\x86\Release\BithMathTestStand.pdb"
+                 to "bin\Release\BithMathTestStand.pdb".
+
+PostBuildEvent:
+  wwBldNbrMgr.exe -r "-pC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\ " "-tC:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe"
+  Build Task           = RecordBuildDetails
+  Assembly File FQFN = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\bin\Release\BithMathTestStand.exe
+          Version    = 4.0.155.22372
+          File Date  = 2016-04-30 13:25:44 (2016-04-30 18:25:44 UTC)
+  Log File FQFN      = C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\TestStand\BuildHistory.LOG
+          File Date  = 2016-04-30 13:25:44 (2016-04-30 18:25:44 UTC)
+
+Build succeeded.
+
+Time Elapsed 00:00:03.56
+========== Build: 2 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+================================================================================
+2016-04-30 14:59:36 - Build the graphical bit viewer. Since I kept forgetting to
+                      incorporate my custom program icon, I did that to force a
+                      new build, which I know will copy the upgraded library.
+================================================================================
+
+------ Build started: Project: ViewBits, Configuration: Debug Any CPU ------
+Build started 2016-04-30 14:59:28.
+
+CoreResGen:
+  "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\Resgen.exe" /useSourcePath
+
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll
+                                                                       /r:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll
+
+                                                                       /r:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+
+                                                                       /compile Form1.resx,
+                                                                                obj\Debug\ViewBits.frmMain.resources
+
+                                                                                Properties\Resources.resx,
+                                                                                obj\Debug\ViewBits.Properties.Resources.resources
+
+  Processing resource file "Form1.resx"
+                      into "obj\Debug\ViewBits.frmMain.resources".
+
+  Processing resource file "Properties\Resources.resx"
+                      into "obj\Debug\ViewBits.Properties.Resources.resources".
+
+CoreCompile:
+  C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe /noconfig
+                                                  /nowarn:1701,
+                                                          1702,
+                                                          2008
+                                                  /nostdlib+
+                                                  /platform:AnyCPU
+                                                  /errorreport:prompt
+                                                  /warn:4
+                                                  /define:DEBUG;
+                                                          TRACE
+                                                  /errorendlocation
+                                                  /preferreduilang:en-US
+                                                  /highentropyva-
+
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll
+                                                  /reference:C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll
+
+                                                  /reference:"C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+
+                                                  /debug+
+                                                  /debug:full
+                                                  /filealign:512
+                                                  /optimize-
+                                                  /out:obj\Debug\ViewBits.exe
+
+                                                  /resource:obj\Debug\ViewBits.frmMain.resources
+                                                  /resource:obj\Debug\ViewBits.Properties.Resources.resources
+
+                                                  /target:winexe
+                                                  /utf8output
+                                                  /win32icon:WW_Icon1.ico
+
+                                                  Program.cs
+
+                                                  Form1.cs
+                                                  Form1.Designer.cs
+
+                                                  Properties\AssemblyInfo.cs
+                                                  Properties\Resources.Designer.cs
+                                                  Properties\Settings.Designer.cs
+
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.dll"
+                 to "bin\Debug\WizardWrx.BitMath.dll".
+  Copying file from "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.pdb"
+                 to "bin\Debug\WizardWrx.BitMath.pdb".
+  Copying file from "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\BitMath\bin\Release\WizardWrx.BitMath.xml"
+                 to "bin\Debug\WizardWrx.BitMath.xml".
+
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Debug\ViewBits.exe"
+                 to "bin\Debug\ViewBits.exe".
+  ViewBits       -> C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\ViewBits\bin\Debug\ViewBits.exe
+  Copying file from "obj\Debug\ViewBits.pdb"
+                 to "bin\Debug\ViewBits.pdb".
+
+Build succeeded.
+
+Time Elapsed 00:00:00.43
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+================================================================================
+2016-04-30 15:24:59 - Make both directories tidy before I make backups.
+================================================================================
+
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\DAVE>dir "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes_Version_4.1.TXT"
+ Volume in drive C is Gateway
+ Volume Serial Number is D841-419A
+
+ Directory of C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES
+
+2016-04-30  15:15            43,533 Development_Notes_Version_4.1.TXT
+               1 File(s)         43,533 bytes
+               0 Dir(s)  548,524,077,056 bytes free
+
+C:\Users\DAVE>attrib.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes_Version_4.1.TXT" +r
+
+C:\Users\DAVE>attrib.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes_Version_4.1.TXT"
+A    R       C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes_Version_4.1.TXT
+
+C:\Users\DAVE>attrib.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes_Version_4.1.TXT" -r
+
+C:\Users\DAVE>attrib.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes_Version_4.1.TXT" +r
+
+C:\Users\DAVE>attrib.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes_Version_4.1.TXT"
+A    R       C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes_Version_4.1.TXT
+
+C:\Users\DAVE>dir "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES\*wbk"
+ Volume in drive C is Gateway
+ Volume Serial Number is D841-419A
+
+ Directory of C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES
+
+2016-04-30  11:21           101,069 Backup of Design_and_Test_Notes.wbk
+               1 File(s)        101,069 bytes
+               0 Dir(s)  548,523,122,688 bytes free
+
+C:\Users\DAVE>sdelete.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES\*wbk"
+
+SDelete - Secure Delete v1.61
+Copyright (C) 1999-2012 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+SDelete is set for 1 pass.
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES\Backup of Design_and_Test_Notes.wbk...deleted.
+1 files found
+
+
+C:\Users\DAVE>dir "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES\*bak"
+ Volume in drive C is Gateway
+ Volume Serial Number is D841-419A
+
+ Directory of C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES
+
+2016-04-30  12:50            25,076 ViewBits_Design_and_Test_Notes.TXT.bak
+               1 File(s)         25,076 bytes
+               0 Dir(s)  548,523,216,896 bytes free
+
+C:\Users\DAVE>sdelete "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES\*bak"
+
+SDelete - Secure Delete v1.61
+Copyright (C) 1999-2012 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+SDelete is set for 1 pass.
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES\ViewBits_Design_and_Test_Notes.TXT.bak...deleted.
+1 files found
+
+
+C:\Users\DAVE>dir "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES\*(*)*"
+ Volume in drive C is Gateway
+ Volume Serial Number is D841-419A
+
+ Directory of C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES
+
+2016-04-30  10:04               246 ViewBits_Design_and_Test_Notes(0).TXT
+2016-04-30  12:50            25,076 ViewBits_Design_and_Test_Notes(1).TXT
+2016-04-30  13:26            31,216 ViewBits_Design_and_Test_Notes(2).TXT
+               3 File(s)         56,538 bytes
+               0 Dir(s)  548,523,253,760 bytes free
+
+C:\Users\DAVE>sdelete.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES\*(*)*"
+
+SDelete - Secure Delete v1.61
+Copyright (C) 1999-2012 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+SDelete is set for 1 pass.
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES\ViewBits_Design_and_Test_Notes(0).TXT...deleted.
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES\ViewBits_Design_and_Test_Notes(1).TXT...deleted.
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\Tools_for_Programmers\ViewBits\NOTES\ViewBits_Design_and_Test_Notes(2).TXT...deleted.
+3 files found
+
+
+C:\Users\DAVE>dir "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\*wbk"
+ Volume in drive C is Gateway
+ Volume Serial Number is D841-419A
+
+ Directory of C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES
+
+File Not Found
+
+C:\Users\DAVE>dir "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\*bak"
+ Volume in drive C is Gateway
+ Volume Serial Number is D841-419A
+
+ Directory of C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES
+
+2016-04-30  15:15            43,533 Development_Notes_Version_4.1.TXT.bak
+               1 File(s)         43,533 bytes
+               0 Dir(s)  548,523,311,104 bytes free
+
+C:\Users\DAVE>sdelete.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\*bak"
+
+SDelete - Secure Delete v1.61
+Copyright (C) 1999-2012 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+SDelete is set for 1 pass.
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes_Version_4.1.TXT.bak...deleted.
+1 files found
+
+
+C:\Users\DAVE>dir "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\*(*)*"
+ Volume in drive C is Gateway
+ Volume Serial Number is D841-419A
+
+ Directory of C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES
+
+2016-04-30  15:15            43,533 Development_Notes_Version_4.1(2).TXT
+               1 File(s)         43,533 bytes
+               0 Dir(s)  548,523,352,064 bytes free
+
+C:\Users\DAVE>sdelete.exe "C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\*(*)*"
+
+SDelete - Secure Delete v1.61
+Copyright (C) 1999-2012 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+SDelete is set for 1 pass.
+C:\Users\DAVE\Documents\Visual Studio 2013\Projects\WizardWrx_Libs\BitMath\NOTES\Development_Notes_Version_4.1(2).TXT...deleted.
+1 files found
+
+
+C:\Users\DAVE>
