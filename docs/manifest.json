@@ -1,0 +1,237 @@
+{
+  "homepages": [],
+  "source_base_path": "F:/Source_Code/Visual_Studio/Projects/WizardWrx_Libs/BitMath/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestStand.Util.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestStand.Util.html",
+          "hash": "ypI61x9ZjycdPLWQSlxTUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestStand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestStand.html",
+          "hash": "sskomdKpUcL/cAbsEIaqHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WizardWrx.BCLIntegerTypeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WizardWrx.BCLIntegerTypeInfo.html",
+          "hash": "qc2iFVa88jQyl7RhhePREg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WizardWrx.BitArray32.BitCount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WizardWrx.BitArray32.BitCount.html",
+          "hash": "Cuw1RCWL821qNL55EVtkgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WizardWrx.BitArray32.BitDisplayOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WizardWrx.BitArray32.BitDisplayOrder.html",
+          "hash": "rKb1SIyvyN9r6f4vR6ct2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WizardWrx.BitArray32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WizardWrx.BitArray32.html",
+          "hash": "G6VcLn3tndbBxINiWYIVJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WizardWrx.BitHelpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WizardWrx.BitHelpers.html",
+          "hash": "YKodjJmhmTEVUoTpAjZ+YQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WizardWrx.BitMaskAndRuler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WizardWrx.BitMaskAndRuler.html",
+          "hash": "rT+IPwXoEAQHSo8Cw/jn5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WizardWrx.BitMaskFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WizardWrx.BitMaskFormat.html",
+          "hash": "qKlu0ptk2TaeTaC5+Izuig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WizardWrx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WizardWrx.html",
+          "hash": "1piQN98OpyfuFfl4VKXo/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "HoGJ3apsN4u6IZK0k8OXmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "DrP1M16Zaob7vm3GVs3n3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "JjhZ6J2v42imvfn4qoxuGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "Un4Hg2SVOEP5FKVBTWKs0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Sg+nKmnHP++YKMT39ruhpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

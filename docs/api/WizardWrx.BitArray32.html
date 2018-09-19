@@ -1,0 +1,4191 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BitArray32
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BitArray32
+   ">
+    <meta name="generator" content="docfx 2.39.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WizardWrx.BitArray32">
+  
+  
+  <h1 id="WizardWrx_BitArray32" data-uid="WizardWrx.BitArray32" class="text-break">Class BitArray32
+  </h1>
+  <div class="markdown level0 summary"><p>This object exposes properties and methods to simplify using masks of up
+to 32 bits in day to day programming.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BitArray32</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WizardWrx.html">WizardWrx</a></h6>
+  <h6><strong>Assembly</strong>: WizardWrx.BitMath.dll</h6>
+  <h5 id="WizardWrx_BitArray32_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BitArray32</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="WizardWrx_BitArray32__ctor_" data-uid="WizardWrx.BitArray32.#ctor*"></a>
+  <h4 id="WizardWrx_BitArray32__ctor" data-uid="WizardWrx.BitArray32.#ctor">BitArray32()</h4>
+  <div class="markdown level1 summary"><p>This default constructor for a BitArray32 object creates an
+object with all bits OFF.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BitArray32()</code></pre>
+  </div>
+  <h5 id="WizardWrx_BitArray32__ctor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Internally, the object is implemented as an unsigned 32 bit integer,
+a native value type.</p>
+</div>
+  
+  
+  <a id="WizardWrx_BitArray32__ctor_" data-uid="WizardWrx.BitArray32.#ctor*"></a>
+  <h4 id="WizardWrx_BitArray32__ctor_System_UInt32_" data-uid="WizardWrx.BitArray32.#ctor(System.UInt32)">BitArray32(UInt32)</h4>
+  <div class="markdown level1 summary"><p>This overloaded constructor for a BitArray32 object creates an
+object with a specified initial value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BitArray32(uint puintInitialValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">puintInitialValue</span></td>
+        <td><p>Pass the initial value into the constructor as an unsigned 32 bit
+integer, a native value type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_01" data-uid="WizardWrx.BitArray32.BIT_01">BIT_01</h4>
+  <div class="markdown level1 summary"><p>Bit 1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_01 = 1U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_02" data-uid="WizardWrx.BitArray32.BIT_02">BIT_02</h4>
+  <div class="markdown level1 summary"><p>Bit 2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_02 = 2U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_03" data-uid="WizardWrx.BitArray32.BIT_03">BIT_03</h4>
+  <div class="markdown level1 summary"><p>Bit 3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_03 = 4U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_04" data-uid="WizardWrx.BitArray32.BIT_04">BIT_04</h4>
+  <div class="markdown level1 summary"><p>Bit 4</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_04 = 8U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_05" data-uid="WizardWrx.BitArray32.BIT_05">BIT_05</h4>
+  <div class="markdown level1 summary"><p>Bit 5</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_05 = 16U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_06" data-uid="WizardWrx.BitArray32.BIT_06">BIT_06</h4>
+  <div class="markdown level1 summary"><p>Bit 6</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_06 = 32U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_07" data-uid="WizardWrx.BitArray32.BIT_07">BIT_07</h4>
+  <div class="markdown level1 summary"><p>Bit 7</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_07 = 64U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_08" data-uid="WizardWrx.BitArray32.BIT_08">BIT_08</h4>
+  <div class="markdown level1 summary"><p>Bit 8</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_08 = 128U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_09" data-uid="WizardWrx.BitArray32.BIT_09">BIT_09</h4>
+  <div class="markdown level1 summary"><p>Bit 9</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_09 = 256U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_10" data-uid="WizardWrx.BitArray32.BIT_10">BIT_10</h4>
+  <div class="markdown level1 summary"><p>Bit 10</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_10 = 512U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_11" data-uid="WizardWrx.BitArray32.BIT_11">BIT_11</h4>
+  <div class="markdown level1 summary"><p>Bit 11</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_11 = 1024U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_12" data-uid="WizardWrx.BitArray32.BIT_12">BIT_12</h4>
+  <div class="markdown level1 summary"><p>Bit 12</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_12 = 2048U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_13" data-uid="WizardWrx.BitArray32.BIT_13">BIT_13</h4>
+  <div class="markdown level1 summary"><p>Bit 13</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_13 = 4096U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_14" data-uid="WizardWrx.BitArray32.BIT_14">BIT_14</h4>
+  <div class="markdown level1 summary"><p>Bit 14</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_14 = 8192U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_15" data-uid="WizardWrx.BitArray32.BIT_15">BIT_15</h4>
+  <div class="markdown level1 summary"><p>Bit 15</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_15 = 16384U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_16" data-uid="WizardWrx.BitArray32.BIT_16">BIT_16</h4>
+  <div class="markdown level1 summary"><p>Bit 16</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_16 = 32768U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_17" data-uid="WizardWrx.BitArray32.BIT_17">BIT_17</h4>
+  <div class="markdown level1 summary"><p>Bit 17</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_17 = 65536U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_18" data-uid="WizardWrx.BitArray32.BIT_18">BIT_18</h4>
+  <div class="markdown level1 summary"><p>Bit 18</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_18 = 131072U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_19" data-uid="WizardWrx.BitArray32.BIT_19">BIT_19</h4>
+  <div class="markdown level1 summary"><p>Bit 19</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_19 = 262144U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_20" data-uid="WizardWrx.BitArray32.BIT_20">BIT_20</h4>
+  <div class="markdown level1 summary"><p>Bit 20</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_20 = 524288U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_21" data-uid="WizardWrx.BitArray32.BIT_21">BIT_21</h4>
+  <div class="markdown level1 summary"><p>Bit 21</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_21 = 1048576U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_22" data-uid="WizardWrx.BitArray32.BIT_22">BIT_22</h4>
+  <div class="markdown level1 summary"><p>Bit 22</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_22 = 2097152U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_23" data-uid="WizardWrx.BitArray32.BIT_23">BIT_23</h4>
+  <div class="markdown level1 summary"><p>Bit 23</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_23 = 4194304U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_24" data-uid="WizardWrx.BitArray32.BIT_24">BIT_24</h4>
+  <div class="markdown level1 summary"><p>Bit 24</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_24 = 8388608U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_25" data-uid="WizardWrx.BitArray32.BIT_25">BIT_25</h4>
+  <div class="markdown level1 summary"><p>Bit 25</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_25 = 16777216U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_26" data-uid="WizardWrx.BitArray32.BIT_26">BIT_26</h4>
+  <div class="markdown level1 summary"><p>Bit 26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_26 = 33554432U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_27" data-uid="WizardWrx.BitArray32.BIT_27">BIT_27</h4>
+  <div class="markdown level1 summary"><p>Bit 27</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_27 = 67108864U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_28" data-uid="WizardWrx.BitArray32.BIT_28">BIT_28</h4>
+  <div class="markdown level1 summary"><p>Bit 28</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_28 = 134217728U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_29" data-uid="WizardWrx.BitArray32.BIT_29">BIT_29</h4>
+  <div class="markdown level1 summary"><p>Bit 29</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_29 = 268435456U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_30" data-uid="WizardWrx.BitArray32.BIT_30">BIT_30</h4>
+  <div class="markdown level1 summary"><p>Bit 30</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_30 = 536870912U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_31" data-uid="WizardWrx.BitArray32.BIT_31">BIT_31</h4>
+  <div class="markdown level1 summary"><p>Bit 31</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_31 = 1073741824U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_32" data-uid="WizardWrx.BitArray32.BIT_32">BIT_32</h4>
+  <div class="markdown level1 summary"><p>Bit 32</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_32 = 2147483648U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NBR_MAX" data-uid="WizardWrx.BitArray32.BIT_NBR_MAX">BIT_NBR_MAX</h4>
+  <div class="markdown level1 summary"><p>Since this class numbers bits from 1. the highest supported bit number is 32.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BIT_NBR_MAX = 32</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NBR_MIN" data-uid="WizardWrx.BitArray32.BIT_NBR_MIN">BIT_NBR_MIN</h4>
+  <div class="markdown level1 summary"><p>Since this class numbers bits from 1. the first bit number is 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BIT_NBR_MIN = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_01" data-uid="WizardWrx.BitArray32.BIT_NUMBER_01">BIT_NUMBER_01</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_01 = 1U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_02" data-uid="WizardWrx.BitArray32.BIT_NUMBER_02">BIT_NUMBER_02</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_02 = 2U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_03" data-uid="WizardWrx.BitArray32.BIT_NUMBER_03">BIT_NUMBER_03</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_03 = 3U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_04" data-uid="WizardWrx.BitArray32.BIT_NUMBER_04">BIT_NUMBER_04</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_04 = 4U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_05" data-uid="WizardWrx.BitArray32.BIT_NUMBER_05">BIT_NUMBER_05</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_05 = 5U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_06" data-uid="WizardWrx.BitArray32.BIT_NUMBER_06">BIT_NUMBER_06</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_06 = 6U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_07" data-uid="WizardWrx.BitArray32.BIT_NUMBER_07">BIT_NUMBER_07</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_07 = 7U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_08" data-uid="WizardWrx.BitArray32.BIT_NUMBER_08">BIT_NUMBER_08</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_08 = 8U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_09" data-uid="WizardWrx.BitArray32.BIT_NUMBER_09">BIT_NUMBER_09</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_09 = 9U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_10" data-uid="WizardWrx.BitArray32.BIT_NUMBER_10">BIT_NUMBER_10</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_10 = 10U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_11" data-uid="WizardWrx.BitArray32.BIT_NUMBER_11">BIT_NUMBER_11</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_11 = 11U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_12" data-uid="WizardWrx.BitArray32.BIT_NUMBER_12">BIT_NUMBER_12</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_12 = 12U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_13" data-uid="WizardWrx.BitArray32.BIT_NUMBER_13">BIT_NUMBER_13</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_13 = 13U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_14" data-uid="WizardWrx.BitArray32.BIT_NUMBER_14">BIT_NUMBER_14</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_14 = 14U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_15" data-uid="WizardWrx.BitArray32.BIT_NUMBER_15">BIT_NUMBER_15</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_15 = 15U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_16" data-uid="WizardWrx.BitArray32.BIT_NUMBER_16">BIT_NUMBER_16</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_16 = 16U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_17" data-uid="WizardWrx.BitArray32.BIT_NUMBER_17">BIT_NUMBER_17</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_17 = 17U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_18" data-uid="WizardWrx.BitArray32.BIT_NUMBER_18">BIT_NUMBER_18</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_18 = 18U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_19" data-uid="WizardWrx.BitArray32.BIT_NUMBER_19">BIT_NUMBER_19</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_19 = 19U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_20" data-uid="WizardWrx.BitArray32.BIT_NUMBER_20">BIT_NUMBER_20</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_20 = 20U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_21" data-uid="WizardWrx.BitArray32.BIT_NUMBER_21">BIT_NUMBER_21</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_21 = 21U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_22" data-uid="WizardWrx.BitArray32.BIT_NUMBER_22">BIT_NUMBER_22</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_22 = 22U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_23" data-uid="WizardWrx.BitArray32.BIT_NUMBER_23">BIT_NUMBER_23</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_23 = 23U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_24" data-uid="WizardWrx.BitArray32.BIT_NUMBER_24">BIT_NUMBER_24</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_24 = 24U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_25" data-uid="WizardWrx.BitArray32.BIT_NUMBER_25">BIT_NUMBER_25</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_25 = 25U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_26" data-uid="WizardWrx.BitArray32.BIT_NUMBER_26">BIT_NUMBER_26</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_26 = 26U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_27" data-uid="WizardWrx.BitArray32.BIT_NUMBER_27">BIT_NUMBER_27</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_27 = 27U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_28" data-uid="WizardWrx.BitArray32.BIT_NUMBER_28">BIT_NUMBER_28</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_28 = 28U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_29" data-uid="WizardWrx.BitArray32.BIT_NUMBER_29">BIT_NUMBER_29</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_29 = 29U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_30" data-uid="WizardWrx.BitArray32.BIT_NUMBER_30">BIT_NUMBER_30</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_30 = 30U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_31" data-uid="WizardWrx.BitArray32.BIT_NUMBER_31">BIT_NUMBER_31</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_31 = 31U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_NUMBER_32" data-uid="WizardWrx.BitArray32.BIT_NUMBER_32">BIT_NUMBER_32</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_NUMBER_32 = 32U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_00" data-uid="WizardWrx.BitArray32.BIT_OFFSET_00">BIT_OFFSET_00</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_00 = 0U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_01" data-uid="WizardWrx.BitArray32.BIT_OFFSET_01">BIT_OFFSET_01</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_01 = 1U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_02" data-uid="WizardWrx.BitArray32.BIT_OFFSET_02">BIT_OFFSET_02</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_02 = 2U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_03" data-uid="WizardWrx.BitArray32.BIT_OFFSET_03">BIT_OFFSET_03</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_03 = 3U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_04" data-uid="WizardWrx.BitArray32.BIT_OFFSET_04">BIT_OFFSET_04</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_04 = 4U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_05" data-uid="WizardWrx.BitArray32.BIT_OFFSET_05">BIT_OFFSET_05</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_05 = 5U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_06" data-uid="WizardWrx.BitArray32.BIT_OFFSET_06">BIT_OFFSET_06</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_06 = 6U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_07" data-uid="WizardWrx.BitArray32.BIT_OFFSET_07">BIT_OFFSET_07</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_07 = 7U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_08" data-uid="WizardWrx.BitArray32.BIT_OFFSET_08">BIT_OFFSET_08</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_08 = 8U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_09" data-uid="WizardWrx.BitArray32.BIT_OFFSET_09">BIT_OFFSET_09</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_09 = 9U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_10" data-uid="WizardWrx.BitArray32.BIT_OFFSET_10">BIT_OFFSET_10</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_10 = 10U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_11" data-uid="WizardWrx.BitArray32.BIT_OFFSET_11">BIT_OFFSET_11</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_11 = 11U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_12" data-uid="WizardWrx.BitArray32.BIT_OFFSET_12">BIT_OFFSET_12</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_12 = 12U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_13" data-uid="WizardWrx.BitArray32.BIT_OFFSET_13">BIT_OFFSET_13</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_13 = 13U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_14" data-uid="WizardWrx.BitArray32.BIT_OFFSET_14">BIT_OFFSET_14</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_14 = 14U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_15" data-uid="WizardWrx.BitArray32.BIT_OFFSET_15">BIT_OFFSET_15</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_15 = 15U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_16" data-uid="WizardWrx.BitArray32.BIT_OFFSET_16">BIT_OFFSET_16</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_16 = 16U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_17" data-uid="WizardWrx.BitArray32.BIT_OFFSET_17">BIT_OFFSET_17</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_17 = 17U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_18" data-uid="WizardWrx.BitArray32.BIT_OFFSET_18">BIT_OFFSET_18</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_18 = 18U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_19" data-uid="WizardWrx.BitArray32.BIT_OFFSET_19">BIT_OFFSET_19</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_19 = 19U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_20" data-uid="WizardWrx.BitArray32.BIT_OFFSET_20">BIT_OFFSET_20</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_20 = 20U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_21" data-uid="WizardWrx.BitArray32.BIT_OFFSET_21">BIT_OFFSET_21</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_21 = 21U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_22" data-uid="WizardWrx.BitArray32.BIT_OFFSET_22">BIT_OFFSET_22</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_22 = 22U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_23" data-uid="WizardWrx.BitArray32.BIT_OFFSET_23">BIT_OFFSET_23</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_23 = 23U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_24" data-uid="WizardWrx.BitArray32.BIT_OFFSET_24">BIT_OFFSET_24</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_24 = 24U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_25" data-uid="WizardWrx.BitArray32.BIT_OFFSET_25">BIT_OFFSET_25</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_25 = 25U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_26" data-uid="WizardWrx.BitArray32.BIT_OFFSET_26">BIT_OFFSET_26</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_26 = 26U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_27" data-uid="WizardWrx.BitArray32.BIT_OFFSET_27">BIT_OFFSET_27</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_27 = 27U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_28" data-uid="WizardWrx.BitArray32.BIT_OFFSET_28">BIT_OFFSET_28</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_28 = 28U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_29" data-uid="WizardWrx.BitArray32.BIT_OFFSET_29">BIT_OFFSET_29</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_29 = 29U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_30" data-uid="WizardWrx.BitArray32.BIT_OFFSET_30">BIT_OFFSET_30</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_30 = 30U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_BIT_OFFSET_31" data-uid="WizardWrx.BitArray32.BIT_OFFSET_31">BIT_OFFSET_31</h4>
+  <div class="markdown level1 summary"><p>Bits are numbered from lowest (least significant) to highest (most significant).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint BIT_OFFSET_31 = 31U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_MINIMUM_BIT_GROUP_IN_FORMAT" data-uid="WizardWrx.BitArray32.MINIMUM_BIT_GROUP_IN_FORMAT">MINIMUM_BIT_GROUP_IN_FORMAT</h4>
+  <div class="markdown level1 summary"><p>The FormatIntegerAsBitArray overload that takes a Bits Per Group
+argument (pintBitsPerGroup) requires its value to either be this
+value or an even multiple of it, or SUPPRESS_BIT_GROUPING (zero).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MINIMUM_BIT_GROUP_IN_FORMAT = 4</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_OFF" data-uid="WizardWrx.BitArray32.OFF">OFF</h4>
+  <div class="markdown level1 summary"><p>This symbolic constant for identifying a bit as OFF maps to bool false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const bool OFF = false</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_ON" data-uid="WizardWrx.BitArray32.ON">ON</h4>
+  <div class="markdown level1 summary"><p>This symbolic constant for identifying a bit as ON maps to bool true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const bool ON = true</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WizardWrx_BitArray32_SUPPRESS_BIT_GROUPING" data-uid="WizardWrx.BitArray32.SUPPRESS_BIT_GROUPING">SUPPRESS_BIT_GROUPING</h4>
+  <div class="markdown level1 summary"><p>Argument pintBitsPerGroup of static method FormatIntegerAsBitArray
+must be either zero (this constant value) or an even multiple of
+MINIMUM_BIT_GROUP_IN_FORMAT (4), which also operates as its minimum
+permitted positive value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SUPPRESS_BIT_GROUPING = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="WizardWrx_BitArray32_BitNumber_" data-uid="WizardWrx.BitArray32.BitNumber*"></a>
+  <h4 id="WizardWrx_BitArray32_BitNumber_System_Int32_" data-uid="WizardWrx.BitArray32.BitNumber(System.Int32)">BitNumber(Int32)</h4>
+  <div class="markdown level1 summary"><p>Return the bit number that corresponds to the given value. Bits are
+numbered from 1, starting with the least significant bit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint BitNumber(int pintBitValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pintBitValue</span></td>
+        <td><p>Signed integer puintBitValue must be a positive integral power of
+two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>If the function succeeds, the return value is the bit number that
+corresponds to the specified integral power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>An ArgumentOutOfRangeException exception is thrown if the input
+value is not an integral power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WizardWrx_BitArray32_BitNumber_" data-uid="WizardWrx.BitArray32.BitNumber*"></a>
+  <h4 id="WizardWrx_BitArray32_BitNumber_System_UInt32_" data-uid="WizardWrx.BitArray32.BitNumber(System.UInt32)">BitNumber(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Return the bit number that corresponds to the given value. Bits are
+numbered from 1, starting with the least significant bit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint BitNumber(uint puintBitValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">puintBitValue</span></td>
+        <td><p>Unsigned integer puintBitValue must be a integral power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>If the function succeeds, the return value is the bit number that
+corresponds to the specified integral power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>An ArgumentOutOfRangeException exception is thrown if the input
+value is not an integral power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WizardWrx_BitArray32_BitOff_" data-uid="WizardWrx.BitArray32.BitOff*"></a>
+  <h4 id="WizardWrx_BitArray32_BitOff_System_Int32_" data-uid="WizardWrx.BitArray32.BitOff(System.Int32)">BitOff(Int32)</h4>
+  <div class="markdown level1 summary"><p>Turn a specified bit in the _uintBitMask instance variable OFF.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BitOff(int pintBitNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pintBitNumber</span></td>
+        <td><p>Ordinal number of bit to turn OFF. Bits are numbered from 1 to 32,
+with 1 being the least significant bit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WizardWrx_BitArray32_BitOff_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This code uses a temporary instance of the BitArray32 class, which is
+discarded as the method returns.</p>
+<p>Since neither operand of the exclusive-OR assignment operator can be
+a BitArray32 object _ubmTheBit must be cast to UInt32, using the
+implicit operator UInt32, defined elsewhere in this class. Private
+variable _uintBitMask is already a UInt32.</p>
+</div>
+  
+  
+  <a id="WizardWrx_BitArray32_BitOn_" data-uid="WizardWrx.BitArray32.BitOn*"></a>
+  <h4 id="WizardWrx_BitArray32_BitOn_System_Int32_" data-uid="WizardWrx.BitArray32.BitOn(System.Int32)">BitOn(Int32)</h4>
+  <div class="markdown level1 summary"><p>Turn a specified bit in the _uintBitMask instance variable ON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BitOn(int pintBitNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pintBitNumber</span></td>
+        <td><p>Ordinal number of bit to turn ON. Bits are numbered from 1 to 32,
+with 1 being the least significant bit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WizardWrx_BitArray32_BitOn_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This code uses a temporary instance of the BitArray32 class, which is
+discarded as the method returns.</p>
+<p>Since neither operand of the logical OR assignment operator can be
+a BitArray32 object _ubmTheBit must be cast to UInt32, using the
+implicit operator UInt32, defined elsewhere in this class. Private
+variable _uintBitMask is already a UInt32.</p>
+</div>
+  
+  
+  <a id="WizardWrx_BitArray32_BitPosition_" data-uid="WizardWrx.BitArray32.BitPosition*"></a>
+  <h4 id="WizardWrx_BitArray32_BitPosition_System_Int32_" data-uid="WizardWrx.BitArray32.BitPosition(System.Int32)">BitPosition(Int32)</h4>
+  <div class="markdown level1 summary"><p>Return the bit position that corresponds to the given value. Bit
+positions are numbered from 0, starting with the least significant
+bit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint BitPosition(int pintBitValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pintBitValue</span></td>
+        <td><p>Signed integer pintBitValue must be a positive integral power of
+two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>If the function succeeds, the return value is the bit position that
+corresponds to the specified integral power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>An ArgumentOutOfRangeException exception is thrown if the input
+value is not an integral power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WizardWrx_BitArray32_BitPosition_" data-uid="WizardWrx.BitArray32.BitPosition*"></a>
+  <h4 id="WizardWrx_BitArray32_BitPosition_System_UInt32_" data-uid="WizardWrx.BitArray32.BitPosition(System.UInt32)">BitPosition(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Return the bit position that corresponds to the given value. Bit
+positions are numbered from 0, starting with the least significant
+bit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint BitPosition(uint puintBitValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">puintBitValue</span></td>
+        <td><p>Unsigned integer puintBitValue must be a integral power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>If the function succeeds, the return value is the bit position that
+corresponds to the specified integral power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>An ArgumentOutOfRangeException exception is thrown if the input
+value is not an integral power of two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WizardWrx_BitArray32_Equals_" data-uid="WizardWrx.BitArray32.Equals*"></a>
+  <h4 id="WizardWrx_BitArray32_Equals_System_Object_" data-uid="WizardWrx.BitArray32.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Override the default Equals method, so that class instances can
+participate in meaningful equality tests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object pComparand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pComparand</span></td>
+        <td><p>A reference to a generic object to be compared against the current
+instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the two meet our definition of Equals, which is that the two
+bit masks are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  
+  
+  <a id="WizardWrx_BitArray32_Equals_" data-uid="WizardWrx.BitArray32.Equals*"></a>
+  <h4 id="WizardWrx_BitArray32_Equals_WizardWrx_BitArray32_" data-uid="WizardWrx.BitArray32.Equals(WizardWrx.BitArray32)">Equals(BitArray32)</h4>
+  <div class="markdown level1 summary"><p>Provide a typecast version of the generic Equals method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(BitArray32 pComparand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.html">BitArray32</a></td>
+        <td><span class="parametername">pComparand</span></td>
+        <td><p>The comparand is the other BitArray32 to be tested for equality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the two meet our definition of Equals, which is that the two
+bit masks are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WizardWrx_BitArray32_FormatIntegerAsBitArray_" data-uid="WizardWrx.BitArray32.FormatIntegerAsBitArray*"></a>
+  <h4 id="WizardWrx_BitArray32_FormatIntegerAsBitArray__1___0_" data-uid="WizardWrx.BitArray32.FormatIntegerAsBitArray``1(``0)">FormatIntegerAsBitArray&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Format any integral value type as an array of bits, listed from most
+significant to least.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FormatIntegerAsBitArray&lt;T&gt;(T pintIntegralValueType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">pintIntegralValueType</span></td>
+        <td><p>This argument is expected to be an integral type, but a non-integral
+type is processed by degrading to its default ToString method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>When argument pintIntegralValueType is an integral value type, the
+returned string is composed of zeros and ones that represent the
+bits that store its value, listing them from most significant bit to
+least.</p>
+<p>If the integer has a sign, the most significant bit is the bit that
+is reserved to hold it. Likewise, the most significant bit of an
+unsigned integer is the bit that stores the highest power of two
+that it can hold.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>This method accepts all integral value types except IntPtr. However,
+since there is no documented provision in the .NET Framework to
+enforce such a restriction on a generic type at compile time, the
+task is left to this method, which enforces it at run time. However,
+when fed an incompatible type, this method degrades gracefully by
+applying its default string format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WizardWrx_BitArray32_FormatIntegerAsBitArray__1___0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method could easily be implemented as a call to the second
+overload, but I chose to keep their implementations separate for two
+reasons.</p>
+<ol>
+<li><p>The second overload concatenates its second argument to the same
+string constant used by this method, passing the resulting string as
+the second argument to the string.Format overload that takes a
+format provider as its first argument. Since string concatenation is
+expensive, why use it when the simpler method call achieves the goal
+so much more cheaply.</p>
+</li>
+<li><p>Since string formatters can see high usage, and the only difference
+between the two overloads is the string concatenation, calling the
+second overload not only incurs a wasteful string concatenation, but it
+must waste a stack frame for this dubious objective.</p>
+</li>
+</ol>
+</div>
+  
+  
+  <a id="WizardWrx_BitArray32_FormatIntegerAsBitArray_" data-uid="WizardWrx.BitArray32.FormatIntegerAsBitArray*"></a>
+  <h4 id="WizardWrx_BitArray32_FormatIntegerAsBitArray__1___0_System_Int32_" data-uid="WizardWrx.BitArray32.FormatIntegerAsBitArray``1(``0,System.Int32)">FormatIntegerAsBitArray&lt;T&gt;(T, Int32)</h4>
+  <div class="markdown level1 summary"><p>Format any integral value type as an array of bits, listed from most
+significant to least, with optional grouping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FormatIntegerAsBitArray&lt;T&gt;(T pintIntegralValueType, int pintBitsPerGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">pintIntegralValueType</span></td>
+        <td><p>This argument is expected to be an integral type, but a non-integral
+type is processed by degrading to its default ToString method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pintBitsPerGroup</span></td>
+        <td><p>Specify the number of bits to include in each group, or specify zero
+to suppress formatting, equivalent to calling the first overload.</p>
+<p>IMPORTANT: The mechanism by which the spaces are inserted imposes a
+restriction that this value must be evenly divisible by 4, such that
+the four bits of each byte are kept together.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>When argument pintIntegralValueType is an integral value type, the
+returned string is composed of zeros and ones that represent the
+bits that store its value, listing them from most significant bit to
+least.</p>
+<p>If the integer has a sign, the most significant bit is the bit that
+is reserved to hold it. Likewise, the most significant bit of an
+unsigned integer is the bit that stores the highest power of two
+that it can hold.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>This method accepts all integral value types except IntPtr. However,
+since there is no documented provision in the .NET Framework to
+enforce such a restriction on a generic type at compile time, the
+task is left to this method to do so at run time. However, when fed
+an incompatible type, this method degrades gracefully by applying
+its default string format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.FormatException</span></td>
+        <td><p>Invalid formatting instructions raise a FormatException exception,
+which typically wraps an ArgumentException, and supplies additional
+detail not usually available from a typical FormatException.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WizardWrx_BitArray32_FormatIntegerAsHex_" data-uid="WizardWrx.BitArray32.FormatIntegerAsHex*"></a>
+  <h4 id="WizardWrx_BitArray32_FormatIntegerAsHex__1___0_" data-uid="WizardWrx.BitArray32.FormatIntegerAsHex``1(``0)">FormatIntegerAsHex&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Format any integral value type as an array of hexadecimal &quot;digits&quot;,
+listed from most significant to least, specifying a standard numeric
+format string and a minimum length appropriate to its maximum value.</p>
+<p>The advantage of this method over the standard ToString overloads is
+that you don't have to figure out how many hexadecimal digits you
+must allow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FormatIntegerAsHex&lt;T&gt;(T pintIntegralValueType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">pintIntegralValueType</span></td>
+        <td><p>This argument is expected to be an integral type, but a non-integral
+type is processed by degrading to its default ToString method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>When argument pintIntegralValueType is an integral value type, the
+returned string is composed of hexadecimal &quot;digits&quot; that represent
+its value in base 16. The length of the string is a function of the
+maximum value that can be stored in an integer of the input type.
+Hence, a Byte, being an 8 bit integer, returns a two-character hex
+string, a UInt16 returns four, UInt32 eight, and UInt64 sixteen.</p>
+<p>Otherwise, the default ToString method on its type is called, and
+the returned string is whatever that method provides.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>This method accepts all integral value types except IntPtr. However,
+since there is no documented provision in the .NET Framework to
+enforce such a restriction on a generic type at compile time, the
+task is left to this method to do so at run time. However, when fed
+an incompatible type, this method degrades gracefully by applying
+its default string format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WizardWrx_BitArray32_GetHashCode_" data-uid="WizardWrx.BitArray32.GetHashCode*"></a>
+  <h4 id="WizardWrx_BitArray32_GetHashCode" data-uid="WizardWrx.BitArray32.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>This class overrides the GetHashCode method of its base class to
+return the hash code for the uint32 primitive that stores its data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>An Integer which is the value returned by the GetHashCode method of
+the uint32 object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  
+  
+  <a id="WizardWrx_BitArray32_GetRulerTens_" data-uid="WizardWrx.BitArray32.GetRulerTens*"></a>
+  <h4 id="WizardWrx_BitArray32_GetRulerTens_WizardWrx_BitArray32_BitCount_WizardWrx_BitArray32_BitDisplayOrder_" data-uid="WizardWrx.BitArray32.GetRulerTens(WizardWrx.BitArray32.BitCount,WizardWrx.BitArray32.BitDisplayOrder)">GetRulerTens(BitArray32.BitCount, BitArray32.BitDisplayOrder)</h4>
+  <div class="markdown level1 summary"><p>Get the tens marks of the bit mask ruler from the string resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetRulerTens(BitArray32.BitCount penmBitCount, BitArray32.BitDisplayOrder penmBitDisplayOrder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.BitCount.html">BitArray32.BitCount</a></td>
+        <td><span class="parametername">penmBitCount</span></td>
+        <td><p>Indicate the length of ruler to generate by way of a member of the
+BitCount enumeration. See the BitCount enumeration for a full
+explanation of each value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.BitDisplayOrder.html">BitArray32.BitDisplayOrder</a></td>
+        <td><span class="parametername">penmBitDisplayOrder</span></td>
+        <td><p>Indicate the direction in which the ruler should be displayed. See
+the XML documentation for the BitDisplayOrder enumeration for a full
+explanation of each value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The return value is a string, exactly 60 characters long, containing
+nine spaces, each followed by the next sequential integer, counting
+from 1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WizardWrx_BitArray32_GetRulerTens_WizardWrx_BitArray32_BitCount_WizardWrx_BitArray32_BitDisplayOrder__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a method call, rather than a property, because the string is
+read from a resource.</p>
+<p>The InvalidOperationException and InvalidEnumArgumentException
+exceptions bubble up, rather than being caught in this routine to
+avoid duplicating the task in both of its internal callers.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.InvalidEnumArgumentException</span></td>
+        <td><p>This method throws an ComponentModel.InvalidEnumArgumentException
+exception when the penmBitCount argument is not a valid member of
+the BitCount enumeration and when the penmBitDisplayOrder argument
+is not a valid member of the BitDisplayOrder enumeration. In both
+cases, a value of Unspecified is treated as invalid.</p>
+<p>If the BitCount value that is invalid, the exception is actually
+thrown by a private method, TrimRuler, which this method, by virtue
+of being unguarded, allows to bubble up the stack, as would be the
+case if it had thrown the exception.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>This method allows the InvalidOperationException exception thrown
+when it calls private method TrimRuler, sending a pstrWholeRuler
+string that has a string length that differs from the length implied
+by the numeric value of the penmBitCount enumeration argument to
+bubble up the call stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WizardWrx_BitArray32_GetRulerTens_WizardWrx_BitArray32_BitCount_WizardWrx_BitArray32_BitDisplayOrder__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="WizardWrx.BitArray32.html#WizardWrx_BitArray32_GetRulerUnits_WizardWrx_BitArray32_BitCount_WizardWrx_BitArray32_BitDisplayOrder_">GetRulerUnits(BitArray32.BitCount, BitArray32.BitDisplayOrder)</a></div>
+  </div>
+  
+  
+  <a id="WizardWrx_BitArray32_GetRulerUnits_" data-uid="WizardWrx.BitArray32.GetRulerUnits*"></a>
+  <h4 id="WizardWrx_BitArray32_GetRulerUnits_WizardWrx_BitArray32_BitCount_WizardWrx_BitArray32_BitDisplayOrder_" data-uid="WizardWrx.BitArray32.GetRulerUnits(WizardWrx.BitArray32.BitCount,WizardWrx.BitArray32.BitDisplayOrder)">GetRulerUnits(BitArray32.BitCount, BitArray32.BitDisplayOrder)</h4>
+  <div class="markdown level1 summary"><p>Get the units marks of the bit mask ruler from the string resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetRulerUnits(BitArray32.BitCount penmBitCount, BitArray32.BitDisplayOrder penmBitDisplayOrder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.BitCount.html">BitArray32.BitCount</a></td>
+        <td><span class="parametername">penmBitCount</span></td>
+        <td><p>Indicate the length of ruler to generate by way of a member of the
+BitCount enumeration. See the BitCount enumeration for a full
+explanation of each value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.BitDisplayOrder.html">BitArray32.BitDisplayOrder</a></td>
+        <td><span class="parametername">penmBitDisplayOrder</span></td>
+        <td><p>Indicate the direction in which the ruler should be displayed. See
+the XML documentation for the BitDisplayOrder enumeration for a full
+explanation of each value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The return value is a string, exactly 64 characters long, containing
+numbers from 1 to 10, repeated six times, followed by numbers
+1 through 4, enough to cover the bits in mask of 64 bits.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WizardWrx_BitArray32_GetRulerUnits_WizardWrx_BitArray32_BitCount_WizardWrx_BitArray32_BitDisplayOrder__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a method call, rather than a property, because the string is
+read from a resource.</p>
+<p>The InvalidOperationException and InvalidEnumArgumentException
+exceptions bubble up, rather than being caught in this routine to
+avoid duplicating the task in both of its internal callers.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.InvalidEnumArgumentException</span></td>
+        <td><p>This method throws an ComponentModel.InvalidEnumArgumentException
+exception when the penmBitCount argument is not a valid member of
+the BitCount enumeration and when the penmBitDisplayOrder argument
+is not a valid member of the BitDisplayOrder enumeration. In both
+cases, a value of Unspecified is treated as invalid.</p>
+<p>If the BitCount value that is invalid, the exception is actually
+thrown by a private method, TrimRuler, which this method, by virtue
+of being unguarded, allows to bubble up the stack, as would be the
+case if it had thrown the exception.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>This method allows the InvalidOperationException exception thrown
+when it calls private method TrimRuler, sending a pstrWholeRuler
+string that has a string length that differs from the length implied
+by the numeric value of the penmBitCount enumeration argument to
+bubble up the call stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WizardWrx_BitArray32_GetRulerUnits_WizardWrx_BitArray32_BitCount_WizardWrx_BitArray32_BitDisplayOrder__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="WizardWrx.BitArray32.html#WizardWrx_BitArray32_GetRulerTens_WizardWrx_BitArray32_BitCount_WizardWrx_BitArray32_BitDisplayOrder_">GetRulerTens(BitArray32.BitCount, BitArray32.BitDisplayOrder)</a></div>
+  </div>
+  
+  
+  <a id="WizardWrx_BitArray32_IsBitOff_" data-uid="WizardWrx.BitArray32.IsBitOff*"></a>
+  <h4 id="WizardWrx_BitArray32_IsBitOff_System_Int32_" data-uid="WizardWrx.BitArray32.IsBitOff(System.Int32)">IsBitOff(Int32)</h4>
+  <div class="markdown level1 summary"><p>Test the state of a specified bit, returning TRUE if it is OFF.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBitOff(int pintBitNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pintBitNumber</span></td>
+        <td><p>Ordinal number of bit to evaluate. Bits are numbered from 1 to 32,
+with 1 being the least significant bit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>TRUE if the specified bit is ON, else FALSE.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WizardWrx_BitArray32_IsBitOff_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This code uses a temporary instance of the BitArray32 class, which is
+discarded as the method returns.</p>
+<p>Unlike the BitOff and BitOn operators, everything is already cast to
+Uint32. Therefore, this method works just fine without any casts.</p>
+<p>Since this code is unlikely to change, it uses the most concise form
+of the IF statement, which supports a single executable statement in
+each branch.</p>
+</div>
+  
+  
+  <a id="WizardWrx_BitArray32_IsBitOn_" data-uid="WizardWrx.BitArray32.IsBitOn*"></a>
+  <h4 id="WizardWrx_BitArray32_IsBitOn_System_Int32_" data-uid="WizardWrx.BitArray32.IsBitOn(System.Int32)">IsBitOn(Int32)</h4>
+  <div class="markdown level1 summary"><p>Test the state of a specified bit, returning TRUE if it is ON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBitOn(int pintBitNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pintBitNumber</span></td>
+        <td><p>Ordinal number of bit to evaluate. Bits are numbered from 1 to 32,
+with 1 being the least significant bit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>TRUE if the specified bit is ON, else FALSE.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WizardWrx_BitArray32_IsBitOn_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This code uses a temporary instance of the BitArray32 class, which is
+discarded as the method returns.</p>
+<p>Unlike the BitOff and BitOn operators, everything is already cast to
+Uint32. Therefore, this method works just fine without any casts.</p>
+<p>Since this code is unlikely to change, it uses the most concise form
+of the IF statement, which supports a single executable statement in
+each branch.</p>
+</div>
+  
+  
+  <a id="WizardWrx_BitArray32_ToString_" data-uid="WizardWrx.BitArray32.ToString*"></a>
+  <h4 id="WizardWrx_BitArray32_ToString" data-uid="WizardWrx.BitArray32.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Override the ToString method to provide a useful output, in the form
+of a hexadecimal representation of the value of its bit mask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A String representation of the private variable that holds the
+current value of the bit mask, formatted as a hexadecimal
+representation of its value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  
+  
+  <a id="WizardWrx_BitArray32_ToString_" data-uid="WizardWrx.BitArray32.ToString*"></a>
+  <h4 id="WizardWrx_BitArray32_ToString_System_String_" data-uid="WizardWrx.BitArray32.ToString(System.String)">ToString(String)</h4>
+  <div class="markdown level1 summary"><p>Override the ToString method to provide additional useful outputs,
+such as a couple of optional binary (bit level) formats.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>In keeping with the standard nomenclature, this format string gives
+details about the output format desired.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WizardWrx_BitArray32_TurnBitOff_" data-uid="WizardWrx.BitArray32.TurnBitOff*"></a>
+  <h4 id="WizardWrx_BitArray32_TurnBitOff_System_Int32_" data-uid="WizardWrx.BitArray32.TurnBitOff(System.Int32)">TurnBitOff(Int32)</h4>
+  <div class="markdown level1 summary"><p>Return a new BitArray32 object in which a specified bit is turned ON
+and all others are OFF.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BitArray32 TurnBitOff(int pintBitNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pintBitNumber</span></td>
+        <td><p>Ordinal number of bit to turn OFF. Bits are numbered from 1 to 32,
+with 1 being the least significant bit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.html">BitArray32</a></td>
+        <td><p>A new BitArray32 object with a single bit turned OFF, and all others
+already turned OFF.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WizardWrx_BitArray32_TurnBitOff_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In essence, this method returns an instance of the BitArray32 created
+by calling its default constructor.</p>
+<p>This method and its companion, TurnBitOn, bounds checks its input,
+notwithstanding the fact that the bitwise operators discard the high
+bits in the bit count operand of the left logical shift operator.</p>
+<p>Since all instance methods call these static methods, these bounds
+checks suffice for the entire class.</p>
+</div>
+  
+  
+  <a id="WizardWrx_BitArray32_TurnBitOn_" data-uid="WizardWrx.BitArray32.TurnBitOn*"></a>
+  <h4 id="WizardWrx_BitArray32_TurnBitOn_System_Int32_" data-uid="WizardWrx.BitArray32.TurnBitOn(System.Int32)">TurnBitOn(Int32)</h4>
+  <div class="markdown level1 summary"><p>Return a new BitArray32 with bit number (ordinal) pintBitNumber
+turned ON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BitArray32 TurnBitOn(int pintBitNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pintBitNumber</span></td>
+        <td><p>Number of bit to turn on with bits numbered from 1 to 32, starting
+with Bit 1 as the least significant bit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.html">BitArray32</a></td>
+        <td><p>A new BitArray32 object, with the specified bit ON and all others
+OFF.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="WizardWrx_BitArray32_TurnBitOn_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method and its companion, TurnBitOff, bounds checks its input,
+notwithstanding the fact that the bitwise operators discard the high
+bits in the bit count operand of the left logical shift operator.</p>
+<p>Since all instance methods call these static methods, these bounds
+checks suffice for the entire class.</p>
+</div>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="WizardWrx_BitArray32_op_Equality_" data-uid="WizardWrx.BitArray32.op_Equality*"></a>
+  <h4 id="WizardWrx_BitArray32_op_Equality_WizardWrx_BitArray32_WizardWrx_BitArray32_" data-uid="WizardWrx.BitArray32.op_Equality(WizardWrx.BitArray32,WizardWrx.BitArray32)">Equality(BitArray32, BitArray32)</h4>
+  <div class="markdown level1 summary"><p>Though not recommended, members of this class override the equality
+and inequality operators.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(BitArray32 pobjLValue, BitArray32 pobjRValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.html">BitArray32</a></td>
+        <td><span class="parametername">pobjLValue</span></td>
+        <td><p>Value on left of equal sign, otherwise known as the LValue or left
+operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.html">BitArray32</a></td>
+        <td><span class="parametername">pobjRValue</span></td>
+        <td><p>Value on right of equal sign, otherwise known as the RValue or right
+operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if both value are equal, or if they refer to the same object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WizardWrx_BitArray32_op_Implicit_" data-uid="WizardWrx.BitArray32.op_Implicit*"></a>
+  <h4 id="WizardWrx_BitArray32_op_Implicit_System_UInt32__WizardWrx_BitArray32" data-uid="WizardWrx.BitArray32.op_Implicit(System.UInt32)~WizardWrx.BitArray32">Implicit(UInt32 to BitArray32)</h4>
+  <div class="markdown level1 summary"><p>Cast a Uint32, the underlying type of a BitArray32, to an object of
+type BitArray32.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator BitArray32(uint pUInt32)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">pUInt32</span></td>
+        <td><p>The Uint32 to be cast to a BitArray32.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.html">BitArray32</a></td>
+        <td><p>A reference to its input variable, cast to a BitArray32.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WizardWrx_BitArray32_op_Implicit_" data-uid="WizardWrx.BitArray32.op_Implicit*"></a>
+  <h4 id="WizardWrx_BitArray32_op_Implicit_WizardWrx_BitArray32__System_UInt32" data-uid="WizardWrx.BitArray32.op_Implicit(WizardWrx.BitArray32)~System.UInt32">Implicit(BitArray32 to UInt32)</h4>
+  <div class="markdown level1 summary"><p>Cast a BitArray32 object to its underlying type, UInt32.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator uint (BitArray32 pMask)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.html">BitArray32</a></td>
+        <td><span class="parametername">pMask</span></td>
+        <td><p>The BitArray32 to be cast to a UInt32.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>A reference to its input variable, cast to a UInt32.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WizardWrx_BitArray32_op_Inequality_" data-uid="WizardWrx.BitArray32.op_Inequality*"></a>
+  <h4 id="WizardWrx_BitArray32_op_Inequality_WizardWrx_BitArray32_WizardWrx_BitArray32_" data-uid="WizardWrx.BitArray32.op_Inequality(WizardWrx.BitArray32,WizardWrx.BitArray32)">Inequality(BitArray32, BitArray32)</h4>
+  <div class="markdown level1 summary"><p>Though not recommended, members of this class override the equality
+and inequality operators.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(BitArray32 pobjLValue, BitArray32 pojbRValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.html">BitArray32</a></td>
+        <td><span class="parametername">pobjLValue</span></td>
+        <td><p>Value on left of equal sign, otherwise known as the LValue or left
+operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WizardWrx.BitArray32.html">BitArray32</a></td>
+        <td><span class="parametername">pojbRValue</span></td>
+        <td><p>Value on right of equal sign, otherwise known as the RValue or right
+operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Inverse of the value returned by the overloaded equals operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,841 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WizardWrx.BitMath</name>
+    </assembly>
+    <members>
+        <member name="T:WizardWrx.BitArray32">
+            <summary>
+            This object exposes properties and methods to simplify using masks of up
+            to 32 bits in day to day programming.
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_01">
+            <summary>
+            Bit 1
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_02">
+            <summary>
+            Bit 2
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_03">
+            <summary>
+            Bit 3
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_04">
+            <summary>
+            Bit 4
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_05">
+            <summary>
+            Bit 5
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_06">
+            <summary>
+            Bit 6
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_07">
+            <summary>
+            Bit 7
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_08">
+            <summary>
+            Bit 8
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_09">
+            <summary>
+            Bit 9
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_10">
+            <summary>
+            Bit 10
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_11">
+            <summary>
+            Bit 11
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_12">
+            <summary>
+            Bit 12
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_13">
+            <summary>
+            Bit 13
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_14">
+            <summary>
+            Bit 14
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_15">
+            <summary>
+            Bit 15
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_16">
+            <summary>
+            Bit 16
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_17">
+            <summary>
+            Bit 17
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_18">
+            <summary>
+            Bit 18
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_19">
+            <summary>
+            Bit 19
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_20">
+            <summary>
+            Bit 20
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_21">
+            <summary>
+            Bit 21
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_22">
+            <summary>
+            Bit 22
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_23">
+            <summary>
+            Bit 23
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_24">
+            <summary>
+            Bit 24
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_25">
+            <summary>
+            Bit 25
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_26">
+            <summary>
+            Bit 26
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_27">
+            <summary>
+            Bit 27
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_28">
+            <summary>
+            Bit 28
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_29">
+            <summary>
+            Bit 29
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_30">
+            <summary>
+            Bit 30
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_31">
+            <summary>
+            Bit 31
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_32">
+            <summary>
+            Bit 32
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_01">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_02">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_03">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_04">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_05">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_06">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_07">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_08">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_09">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_10">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_11">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_12">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_13">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_14">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_15">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_16">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_17">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_18">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_19">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_20">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_21">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_22">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_23">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_24">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_25">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_26">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_27">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_28">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_29">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_30">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_31">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NUMBER_32">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_00">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_01">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_02">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_03">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_04">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_05">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_06">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_07">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_08">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_09">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_10">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_11">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_12">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_13">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_14">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_15">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_16">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_17">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_18">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_19">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_20">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_21">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_22">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_23">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_24">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_25">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_26">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_27">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_28">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_29">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_30">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_OFFSET_31">
+            <summary>
+            Bits are numbered from lowest (least significant) to highest (most significant).
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.ON">
+            <summary>
+            This symbolic constant for identifying a bit as ON maps to bool true.
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.OFF">
+            <summary>
+            This symbolic constant for identifying a bit as OFF maps to bool false.
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NBR_MAX">
+            <summary>
+            Since this class numbers bits from 1. the highest supported bit number is 32.
+            </summary>
+        </member>
+        <member name="F:WizardWrx.BitArray32.BIT_NBR_MIN">
+            <summary>
+            Since this class numbers bits from 1. the first bit number is 1.
+            </summary>
+        </member>
+        <member name="M:WizardWrx.BitArray32.#ctor">
+            <summary>
+            This default constructor for a BitArray32 object creates an
+            object with all bits OFF.
+            </summary>
+            <remarks>
+            Internally, the object is implemented as an unsigned 32 bit integer,
+            a native value type.
+            </remarks>
+        </member>
+        <member name="M:WizardWrx.BitArray32.#ctor(System.UInt32)">
+            <summary>
+            This overloaded constructor for a BitArray32 object creates an
+            object with a specified initial value.
+            </summary>
+            <param name="puintInitialValue">
+            Pass the initial value into the constructor as an unsigned 32 bit
+            integer, a native value type.
+            </param>
+        </member>
+        <member name="M:WizardWrx.BitArray32.BitOff(System.Int32)">
+             <summary>
+             Turn a specified bit in the _uintBitMask instance variable OFF.
+             </summary>
+             <param name="pintBitNumber">
+             Ordinal number of bit to turn OFF. Bits are numbered from 1 to 32,
+             with 1 being the least significant bit.
+             </param>
+             <remarks>
+             This code uses a temporary instance of the BitArray32 class, which is
+             discarded as the method returns.
+            
+             Since neither operand of the exclusive-OR assignment operator can be
+             a BitArray32 object _ubmTheBit must be cast to UInt32, using the
+             implicit operator UInt32, defined elsewhere in this class. Private
+             variable _uintBitMask is already a UInt32.
+             </remarks>
+        </member>
+        <member name="M:WizardWrx.BitArray32.BitOn(System.Int32)">
+             <summary>
+             Turn a specified bit in the _uintBitMask instance variable ON.
+             </summary>
+             <param name="pintBitNumber">
+             Ordinal number of bit to turn ON. Bits are numbered from 1 to 32,
+             with 1 being the least significant bit.
+             </param>
+             <remarks>
+             This code uses a temporary instance of the BitArray32 class, which is
+             discarded as the method returns.
+            
+             Since neither operand of the logical OR assignment operator can be
+             a BitArray32 object _ubmTheBit must be cast to UInt32, using the
+             implicit operator UInt32, defined elsewhere in this class. Private
+             variable _uintBitMask is already a UInt32.
+             </remarks>
+        </member>
+        <member name="M:WizardWrx.BitArray32.IsBitOff(System.Int32)">
+             <summary>
+             Test the state of a specified bit, returning TRUE if it is OFF.
+             </summary>
+             <param name="pintBitNumber">
+             Ordinal number of bit to evaluate. Bits are numbered from 1 to 32,
+             with 1 being the least significant bit.
+             </param>
+             <returns>
+             TRUE if the specified bit is ON, else FALSE.
+             </returns>
+             <remarks>
+             This code uses a temporary instance of the BitArray32 class, which is
+             discarded as the method returns.
+            
+             Unlike the BitOff and BitOn operators, everything is already cast to
+             Uint32. Therefore, this method works just fine without any casts.
+            
+             Since this code is unlikely to change, it uses the most concise form
+             of the IF statement, which supports a single executable statement in
+             each branch.
+             </remarks>
+        </member>
+        <member name="M:WizardWrx.BitArray32.IsBitOn(System.Int32)">
+             <summary>
+             Test the state of a specified bit, returning TRUE if it is ON.
+             </summary>
+             <param name="pintBitNumber">
+             Ordinal number of bit to evaluate. Bits are numbered from 1 to 32,
+             with 1 being the least significant bit.
+             </param>
+             <returns>
+             TRUE if the specified bit is ON, else FALSE.
+             </returns>
+             <remarks>
+             This code uses a temporary instance of the BitArray32 class, which is
+             discarded as the method returns.
+            
+             Unlike the BitOff and BitOn operators, everything is already cast to
+             Uint32. Therefore, this method works just fine without any casts.
+            
+             Since this code is unlikely to change, it uses the most concise form
+             of the IF statement, which supports a single executable statement in
+             each branch.
+             </remarks>
+        </member>
+        <member name="M:WizardWrx.BitArray32.BitNumber(System.UInt32)">
+            <summary>
+            Return the bit number that corresponds to the given value. Bits are
+            numbered from 1, starting with the least significant bit.
+            </summary>
+            <param name="puintBitValue">
+            Unsigned integer puintBitValue must be a integral power of two.
+            </param>
+            <returns>
+            If the function succeeds, the return value is the bit number that
+            corresponds to the specified integral power of two.
+            </returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            An ArgumentOutOfRangeException exception is thrown if the input
+            value is not an integral power of two.
+            </exception>
+        </member>
+        <member name="M:WizardWrx.BitArray32.BitNumber(System.Int32)">
+            <summary>
+            Return the bit number that corresponds to the given value. Bits are
+            numbered from 1, starting with the least significant bit.
+            </summary>
+            <param name="pintBitValue">
+            Signed integer puintBitValue must be a positive integral power of
+            two.
+            </param>
+            <returns>
+            If the function succeeds, the return value is the bit number that
+            corresponds to the specified integral power of two.
+            </returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            An ArgumentOutOfRangeException exception is thrown if the input
+            value is not an integral power of two.
+            </exception>
+        </member>
+        <member name="M:WizardWrx.BitArray32.BitPosition(System.UInt32)">
+            <summary>
+            Return the bit position that corresponds to the given value. Bit
+            positions are numbered from 0, starting with the least significant
+            bit.
+            </summary>
+            <param name="puintBitValue">
+            Unsigned integer puintBitValue must be a integral power of two.
+            </param>
+            <returns>
+            If the function succeeds, the return value is the bit position that
+            corresponds to the specified integral power of two.
+            </returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            An ArgumentOutOfRangeException exception is thrown if the input
+            value is not an integral power of two.
+            </exception>
+        </member>
+        <member name="M:WizardWrx.BitArray32.BitPosition(System.Int32)">
+            <summary>
+            Return the bit position that corresponds to the given value. Bit
+            positions are numbered from 0, starting with the least significant
+            bit.
+            </summary>
+            <param name="pintBitValue">
+            Ssigned integer pintBitValue must be a positive integral power of
+            two.
+            </param>
+            <returns>
+            If the function succeeds, the return value is the bit position that
+            corresponds to the specified integral power of two.
+            </returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            An ArgumentOutOfRangeException exception is thrown if the input
+            value is not an integral power of two.
+            </exception>
+        </member>
+        <member name="M:WizardWrx.BitArray32.TurnBitOff(System.Int32)">
+             <summary>
+             Return a new BitArray32 object in which a specified bit is turned ON
+             and all others are OFF.
+             </summary>
+             <param name="pintBitNumber">
+             Ordinal number of bit to turn OFF. Bits are numbered from 1 to 32,
+             with 1 being the least significant bit.
+             </param>
+             <returns>
+             A new BitArray32 object with a single bit turned OFF, and all others
+             already turend OFF.
+             </returns>
+             <remarks>
+             In essence, this method returns an instance of the BitArray32 created
+             by calling its default constructor.
+            
+             This method and its companion, TurnBitOn, bounds checks its input,
+             notwithstanding the fact that the bitwise operators discard the high
+             bits in the bit count operand of the left logical shift operator.
+            
+             Since all instance methods call these static methods, these bounds
+             checks suffice for the entire class.
+             </remarks>
+        </member>
+        <member name="M:WizardWrx.BitArray32.TurnBitOn(System.Int32)">
+             <summary>
+             Return a new BitArray32 with bit number (ordinal) pintBitNumber
+             turned ON.
+             </summary>
+             <param name="pintBitNumber">
+             Number of bit to turn on with bits numbered from 1 to 32, starting
+             with Bit 1 as the least significant bit.
+             </param>
+             <returns>
+             A new BitArray32 object, with the specified bit ON and all others 
+             OFF.
+             </returns>
+             <remarks>
+             This method and its companion, TurnBitOff, bounds checks its input,
+             notwithstanding the fact that the bitwise operators discard the high
+             bits in the bit count operand of the left logical shift operator.
+            
+             Since all instance methods call these static methods, these bounds
+             checks suffice for the entire class.
+             </remarks>
+        </member>
+        <member name="M:WizardWrx.BitArray32.ToString">
+            <summary>
+            Override the ToString method to provide a useful output, in the form
+            of a hexadecimal representation of the value of its bit mask.
+            </summary>
+            <returns>
+            A String representation of the private variable that holds the
+            current value of the bit mask, formatted as a hexadecimal
+            representation of its value.
+            </returns>
+        </member>
+        <member name="M:WizardWrx.BitArray32.Equals(System.Object)">
+            <summary>
+            Override the default Equals method, so that class instances can
+            participate in meaningful equality tests.
+            </summary>
+            <param name="pComparand">
+            A reference to a generic object to be compared against the current
+            instance.
+            </param>
+            <returns>
+            True if the two meet our definition of Equals, which is that the two
+            bit masks are equal.
+            </returns>
+        </member>
+        <member name="M:WizardWrx.BitArray32.Equals(WizardWrx.BitArray32)">
+            <summary>
+            Provide a typecast version of the generic Equals method.
+            </summary>
+            <param name="pComparand">
+            The comparand is the other BitArray32 to be tested for equality. 
+            </param>
+            A reference to another instance of the BitArray32 class, to be
+            compared against the current instance.
+            <returns>
+            True if the two meet our definition of Equals, which is that the two
+            bit masks are equal.
+            </returns>
+        </member>
+        <member name="M:WizardWrx.BitArray32.GetHashCode">
+            <summary>
+            This class overrides the GetHashCode method of its base class to
+            return the hash code for the uint32 primitive that stores its data.
+            </summary>
+            <returns>
+            An Integer which is the value returned by the GetHashCode method of
+            the uint32 object.
+            </returns>
+        </member>
+        <member name="M:WizardWrx.BitArray32.op_Equality(WizardWrx.BitArray32,WizardWrx.BitArray32)">
+            <summary>
+            Though not recommended, members of this class override the equality
+            and inequality operators.
+            </summary>
+            <param name="pobjLValue">
+            Value on left of equal sign, otherwise known as the LValue or left
+            operand.
+            </param>
+            <param name="pobjRValue">
+            Value on right of equal sign, otherwise known as the RValue or right
+            operand.
+            </param>
+            <returns>
+            True if both value are equal, or if they refer to the same object.
+            </returns>
+        </member>
+        <member name="M:WizardWrx.BitArray32.op_Inequality(WizardWrx.BitArray32,WizardWrx.BitArray32)">
+            <summary>
+            Though not recommended, members of this class override the equality
+            and inequality operators.
+            </summary>
+            <param name="pobjLValue">
+            Value on left of equal sign, otherwise known as the LValue or left
+            operand.
+            </param>
+            <param name="pojbRValue">
+            Value on right of equal sign, otherwise known as the RValue or right
+            operand.
+            </param>
+            <returns>
+            Inverse of the value returned by the overloaded equals operator.
+            </returns>
+        </member>
+        <member name="M:WizardWrx.BitArray32.op_Implicit(WizardWrx.BitArray32)~System.UInt32">
+            <summary>
+            Cast a BitArray32 object to its underlying type, UInt32.
+            </summary>
+            <param name="pMask">
+            The BitArray32 to be cast to a UInt32.
+            </param>
+            <returns>
+            A reference to its input variable, cast to a UInt32.
+            </returns>
+        </member>
+        <member name="M:WizardWrx.BitArray32.op_Implicit(System.UInt32)~WizardWrx.BitArray32">
+            <summary>
+            Cast a Uint32, the underlying type of a BitArray32, to an object of
+            type BitArray32.
+            </summary>
+            <param name="pUInt32">
+            The Uint32 to be cast to a BitArray32.
+            </param>
+            <returns>
+            A reference to its input variable, cast to a BitArray32.
+            </returns>
+        </member>
+    </members>
+</doc>
