@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>This is the HOMEPAGE. </title>
+    <title>Introduction to the WizardWrx BitMath Library </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="This is the HOMEPAGE. ">
+    <meta name="title" content="Introduction to the WizardWrx BitMath Library ">
     <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="favicon.ico">
@@ -60,13 +60,107 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="this-is-the-homepage">This is the <strong>HOMEPAGE</strong>.</h1>
+<h1 id="introduction-to-the-wizardwrx-bitmath-library">Introduction to the WizardWrx BitMath Library</h1>
 
-<p>Refer to <a href="http://daringfireball.net/projects/markdown/">Markdown</a> for how to write markdown files.</p>
-<h2 id="quick-start-notes">Quick Start Notes:</h2>
+<p>I created the <strong>WizardWrx BitMath</strong> to simplify the C# and VB.NET programming
+that I do for myself and my clients by encapsulating tricky bit manipulations in
+a set of methods that support treating 32 bit unsigned integers as bit maps.</p>
+<p>For maximum compatibility, the library was built against version 2.0 of the
+Microsoft .NET Framework, and it is compatible with versions from 2.0 up. The
+classes in this library define numerous constants and utility methods, all
+assigned to the base <code>WizardWrx</code> namespace.</p>
+<p>Since the base <code>WizardWrx</code> namespace is free of name collisions, you may safely
+add any <code>WizardWrx</code> assembly to any project, and add a <code>using WizardWrx</code>
+directive to any source module to gain concurrent aaccess to all of them.</p>
+<p>Use the <strong>API Documentation</strong> link in the navigation bar at the top of this page
+to display a summary of the classes, along with links to complete documentation
+of the public constants, enumerations, and methods exposed by them.</p>
+<h1 id="road-map">Road Map</h1>
+<p>This library is very stable, and I anticipate few changes beyond maybe extending
+the bit maps to support more bits (e. g., 48, 64, 96, 128). For now, a 32 bit
+map is more than enough to meet my needs, so that's as far as I went, except for
+the bit map formetter, which I extended to 64 bits when I created it, so that it
+covers the bits of an unsigned long integer.</p>
+<p>The current version of this library was built on 04 May 2016, and many of my
+other libraries, all of which are in active use and development, depend upon its
+classes for <em>critical</em> functions. The <code>TestStand</code> project is a comprehensive unit
+test set that covers every property and method in the library, and does double
+duty as a demonstration of its use. <code>BitMath_TestStand_20181118_134455.LOG</code> in
+the root directory of the repository is the output from executing it in a
+command prompt window. Other examples exist here and there in the
+<a href="https://github.com/txwizard/WizardWrx_NET_API">WizardWrx .NET API</a>.</p>
 <ol>
-<li>Add images to the <em>images</em> folder if the file is referencing an image.</li>
+<li><strong>NuGet Packages</strong> are a certainty, once I find time to create them.</li>
 </ol>
+<h1 id="contributing">Contributing</h1>
+<p>Though I created this library to meet my individual development needs, I have
+put a good bit of thought and care into its design. Moreover, since I will not
+live forever, and I hope these libraries can outlive me, I would be honored to
+add contributions from others to it, and eventually designate a new owner. My
+expectations are relatively few, simple, easy to meet, and intended to preserve
+the consistency of the code base and its API.</p>
+<ol>
+<li><p><strong>Naming Conventions</strong>: I use Hungarian notation. Some claim that it has
+outlived its usefulness. I think it remains useful because it encodes data
+about the objects to which the names are applied that follows them wherever they
+go, and convey it without help from IntelliSense.</p>
+</li>
+<li><p><strong>Coding Style</strong>: I have my editor set to leave spaces around every token.
+This spacing has helped me quicly spot misplaced puncuation, such as the right
+bracket that closes an array initializer that is in the wrong place, and it
+makes mathematical expressions easier to read and mentally parse.</p>
+</li>
+<li><p><strong>Comments</strong>: I comment liberally and very deliberately. Of particular
+importance are the comments that I append to the bracket that closes a block. It
+does either or both of two things: link it to the opening statement, and
+document which of two paths an <strong>if</strong> statement is expected to follow most of
+the time. When blocks get nested two, three, or four deep, they earn their keep.</p>
+</li>
+<li><p><strong>Negative Conditions</strong>: I do my best to avoid them, because they almost
+always cause confusion. Astute observers will notice that they occur from time
+to time, because there are <em>a few cases</em> where they are <em>less</em> confusing.</p>
+</li>
+<li><p><strong>Array Initializers</strong>: Arrays that have more than a very few initializers,
+or that are initialized to long strings, are laid out as lists, with line
+comments, if necessary, that describe the intent of each item.</p>
+</li>
+<li><p><strong>Format Item Lists</strong>: Lists of items that are paired with format items in
+calls to <code>string.Format</code>, <code>Console.WriteLine</code>, and their relatives, are laid out
+as arrays, even if there are too few to warrant one, and the comments show the
+corresponding format item in context. This helps ensure that the items are
+listed in the correct order, and that all format items are covered. This
+practice has exposed countless bugs very early, when they are easiest to correct.</p>
+</li>
+<li><p><strong>Symbolic Constants</strong>: I use symbolic constants to document what a literal
+value means in the context in which it is used, and to disambiguate tokens that
+are easy to confuse, suzh as <code>1</code> and <code>l</code> (lower case L), <code>0</code> and <code>o</code> (lower case O),
+literal spaces (1 and 2 spaces are common), underscores, the number <code>-1</code>, and so
+forth. Literals that are widely applicable are defined in a set of classes that
+comprise the majority of the root <code>WizardWrx</code> namespace.</p>
+</li>
+<li><p><strong>Argument Lists</strong>: I treat argument lists as arrays, and often comment each
+argument with the name of the paramter that it represents. These lists help
+guarantee that a long list of positional arguments is specified in the correct
+order, especially when several are of the same type (e. g., two or more integer
+arguments). This practice exposes bugs early, some subtle, when they are easy to
+correct.</p>
+</li>
+<li><p><strong>Triple-slash Comments</strong>: These go on <em>everything</em>, even private members and
+methods, so that everything supports IntelliSense, and it's easy to apply a tool
+(I use DocFX.) to generate reference documentation.</p>
+</li>
+</ol>
+<p>With respect to the above items, you can expect me to be a nazi, though I shall
+endeavor to give contributors a fair hearing for a good case. Otherwise, please
+exercise your imagination, and submit your pull requests. When I get the NuGet
+package implemented, I'll take care of rolling the contributions into the
+package, and contributors will get prominent credit on the package page in the
+official public repository. If you skim the headnotes of the code, you will
+notice that I take great pains to give others credit when I icorporate their
+code into my projects, even to the point of disclaiming copyright or leaving
+their copyright notice intact. Along the same lines, the comments are liberally
+sprinkled with references to articles and Stack Overflow discussions that
+contributed to the work.</p>
 </article>
           </div>
           

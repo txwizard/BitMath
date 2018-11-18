@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PLACEHOLDER </title>
+    <title>WizardWrx BitMath Library </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="PLACEHOLDER ">
+    <meta name="title" content="WizardWrx BitMath Library ">
     <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,9 +67,41 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="placeholder">PLACEHOLDER</h1>
+<h1 id="wizardwrx-bitmath-library">WizardWrx BitMath Library</h1>
 
-<p>TODO: Add .NET projects to the <em>src</em> folder and run <code>docfx</code> to generate <strong>REAL</strong> <em>API Documentation</em>!</p>
+<p>The following sections summarize the classes. To use them, add a reference to
+the <code>WizardWrx.BitMath.dll</code>, and add a using directive that specifies the
+<code>WizardWrx</code> namespace.</p>
+<p>Use the links in the table of contents along the left side of this page to view
+the documentation.</p>
+<h2 id="why-the-root-namespace-is-called-wizardwrx">Why the Root Namespace Is Called WizardWrx</h2>
+<p>The short version is that I needed a short, descriptive root namespace name, and
+I was doing business as WizardWrx, a name suggested by my then-new bride, to
+convey her belief that I am a wizard, and because we happened to be living in a
+village called Wizard Wells.</p>
+<h2 id="class-overview">Class Overview</h2>
+<ul>
+<li><p><strong>BCLIntegerTypeInfo</strong>: Instances of this type are built into the library as
+a static read-only array, which is incorporated into the static BitHelpers class
+for use by its static methods, all of which are internal to this assembly.</p>
+</li>
+<li><p><strong>BitArray32</strong>: This object exposes properties and methods to simplify using
+masks of up to 32 bits in day to day programming.</p>
+</li>
+<li><p><strong>BitHelpers</strong>: This static class defines utility methods to support
+formatting of integral data types as arrays of individual bits, along with
+embedded read-only data structures to support their work.</p>
+</li>
+<li><p><strong>BitMaskAndRuler</strong>: Instances of this class keep a bit mask and a correctly
+oriented ruler together.</p>
+</li>
+<li><p><strong>BitMaskFormat</strong>: A default instance of this class is fed into an overload
+of string.Format to render the bit array.</p>
+</li>
+<li><p><strong>FormattingParameters</strong>: Static method ParseFormatString on class BitHelpers
+reports its findings by constructing and returning an instance of this class.</p>
+</li>
+</ul>
 </article>
           </div>
           

@@ -17,11 +17,30 @@ of what framework version is its target, and whether its surface is a Windows
 console, the Windows desktop, or the ASP.NET Web server. To date, I have used
 classes and methods in these libraries in all three environments.
 
-Since this library is small and self-contained, it is the first of several that
-I plan to publish as public GitHub repositories.
+
+## Using These Libraries
+
+Since there are no name collisions, you may safely set references to all 6
+namespaces in the same source module.
+
+Detailed API documentation is at <https://txwizard.github.io/BitMath/>.
+
+For those who just want to use them, debug and release builds of the libraries
+and the unit test program are available as archives off the project root
+directory.
+
+*	`WizardWrx_BitMath_Binaries_Debug.7z` is the debug build of the binaries.
+
+*	`WizardWrx_BitMath_Binaries_Release.7z` is the release build of the binaries.
+
+There is a DLL, PDB, and XML file for each library. To derive maximum benefit,
+including support for the Visual Studio managed code debugger and IntelliSense
+in the text editor, take all three.
 
 # Revision History
 
 2016-06-07 12:07:00 Initial publication, with built-in IntelliSense help
 
 2018/09/18 23:23:55 DocFX documentation added
+
+2018/11/18 01:46:46 Generate new DocFX documentation based on my improved style sheets.
