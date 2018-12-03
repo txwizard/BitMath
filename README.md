@@ -24,7 +24,8 @@ Since there are no name collisions, you may safely set references to any library
 that exposes objects in the the `WizardWrx` namespace in a project, and add a
 using directive for any of its subsidiary namespaces to any source module.
 
-Detailed API documentation is at <https://txwizard.github.io/BitMath/>.
+Detailed API documentation is at
+[https://txwizard.github.io/BitMath](https://txwizard.github.io/BitMath).
 
 For those who just want to use them, debug and release builds of the library
 and its unit test program are available as archives off the project root

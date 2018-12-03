@@ -41,7 +41,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="WizardWrx.SharedUtl2">
-      <HintPath>..\..\_Deprecated_Libraries\SharedUtl2\SharedUtl2\bin\Release\WizardWrx.SharedUtl2.dll</HintPath>
+      <HintPath>..\..\_Deprecated_Libraries\SharedUtl2\SharedUtl2\bin\Release\Wizardwrx.SharedUtl2.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
