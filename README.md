@@ -35,10 +35,13 @@ directory.
 
 *	`WizardWrx_BitMath_Binaries_Release.7z` is the release build of the binaries.
 
-There is a DLL, PDB, and XML file for each assembly except the unt test program,
+There is a DLL, PDB, and XML file for each assembly except the unit test program,
 which needs no XML documentation. To derive maximum benefit, including support
 for the Visual Studio managed code debugger and IntelliSense in the text editor,
 take all three.
+
+As of 2019/04/30, there is a corresponding NuGet package; search the NuGet
+gallery for `WizardWrx.BitMath`.
 
 # Revision History
 
@@ -51,3 +54,6 @@ sheets.
 
 2018/11/18 16:29:53 Rewrite the ReadMe (this file), and add the overlooked
 archives of the binaries.
+
+2019/04/30 01:50:21 Correct a typographical error that I discovered after I
+copied this file for use as README.txt for the NuGet package.
