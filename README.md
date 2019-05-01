@@ -40,8 +40,8 @@ which needs no XML documentation. To derive maximum benefit, including support
 for the Visual Studio managed code debugger and IntelliSense in the text editor,
 take all three.
 
-As of 2019/04/30, there is a corresponding NuGet package; search the NuGet
-gallery for `WizardWrx.BitMath`.
+As of 2019/04/30, there is a corresponding NuGet package at
+[https://www.nuget.org/packages/WizardWrx.BitMath/](https://www.nuget.org/packages/WizardWrx.BitMath/)
 
 # Revision History
 
